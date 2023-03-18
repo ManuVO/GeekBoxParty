@@ -11,7 +11,7 @@ function NavigationBar() {
       </div>
       <div className="sections">
         <ul>
-          <li>Ranking</li>
+          <li>Ranking2</li>
           <li>Terrenos</li>
           <li>Juegos</li>
         </ul>
