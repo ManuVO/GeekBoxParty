@@ -7,7 +7,7 @@ function Ranking() {
       <table>
         <thead>
           <tr>
-            <th>Posición</th>
+            <th>Posición2</th>
             <th>Jugador</th>
             <th>Puntuación</th>
           </tr>
