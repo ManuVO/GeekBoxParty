@@ -1,3 +1,4 @@
+/*
 import Game from '../Assets/games/'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
@@ -14,3 +15,4 @@ function GameContainer() {
 }
 
 export default GameContainer;
+*/

@@ -1,0 +1,16 @@
+@import "../scss/variables";
+@import "../scss/reset";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+    height: 100vh;
+    //background-color: $darkPurple;
+}

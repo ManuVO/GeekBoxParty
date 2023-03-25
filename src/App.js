@@ -1,15 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import React from 'react';
-import NavigationBar from './Components/NavigationBar';
-import Ranking from './Components/Ranking';
-import GamesSection from './Components/GamesSection';
-import GameScreen from './Screens/GameScreen'
-import tictactoe from './Assets/img/tictactoe.png';
+//import Mayuscula al empezar SIEMPRE.
+import Conecta4 from "./Games/conecta4/conecta4";
+import Tictactoe from "./Games/tictactoe/tictactoe.js";
 
 function App() {
   return (
-    <GameScreen />
+  <Conecta4 />
+  //<Tictactoe />
   );
 }
 
