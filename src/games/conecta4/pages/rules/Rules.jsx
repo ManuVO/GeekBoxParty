@@ -1,5 +1,5 @@
 import Styles from "./Rules.module.scss";
-import iconCheck from "../../assets/images/icon-check.svg";
+import iconCheck from "../../assetsConecta4/images/icon-check.svg";
 import { Link } from "react-router-dom";
 const Rules = () => {
   return (

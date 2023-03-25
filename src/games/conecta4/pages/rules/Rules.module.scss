@@ -1,13 +1,14 @@
-@import "../../scss/variables", "../../scss/mixins";
+@import "../../scss/variables";
+@import "../../scss/mixins";
 
 @font-face {
   font-family: spaceGroteskBold;
-  src: url(../../assets/fonts/static/SpaceGrotesk-Bold.ttf);
+  src: url(../../assetsConecta4/fonts/static/SpaceGrotesk-Bold.ttf);
 }
 
 @font-face {
   font-family: spaceGroteskMedium;
-  src: url(../../assets/fonts/static/SpaceGrotesk-Medium.ttf);
+  src: url(../../assetsConecta4/fonts/static/SpaceGrotesk-Medium.ttf);
 }
 
 .rulesContainer img {

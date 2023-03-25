@@ -4,9 +4,9 @@ import { HiSwitchHorizontal } from "react-icons/hi";
 import { Link, useNavigate } from "react-router-dom";
 
 // ? STYLE IMPORTS
-import Pvp from "../../assets/images/player-vs-player.svg";
-import PvpCpu from "../../assets/images/player-vs-cpu.svg";
-import Logo from "../../assets/images/logo.svg";
+import Pvp from "../../assetsConecta4/images/player-vs-player.svg";
+import PvpCpu from "../../assetsConecta4/images/player-vs-cpu.svg";
+import Logo from "../../assetsConecta4/images/logo.svg";
 import Styles from "./MainMenu.module.scss";
 
 const MainMenu = () => {

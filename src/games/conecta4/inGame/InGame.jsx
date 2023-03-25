@@ -2,25 +2,25 @@
 
 //? REACT IMPORTS
 import { useLocation } from "react-router-dom";
-import MyVerticallyCenteredModal from "../../components/menu/Menu";
+import MyVerticallyCenteredModal from "../menu/Menu";
 import { useState, useRef, useEffect } from "react";
 import Ball from "../ball/Ball";
 // ? STYLE IMPORTS
-import Logo from "../../assets/images/logo.svg";
-import BlackBoard from "../../assets/images/board-layer-black-large.svg";
-import SmallBlackBoard from "../../assets/images/board-layer-black-small.svg";
+import Logo from "../assetsConecta4/images/logo.svg";
+import BlackBoard from "../assetsConecta4/images/board-layer-black-large.svg";
+import SmallBlackBoard from "../assetsConecta4/images/board-layer-black-small.svg";
 
-import WhiteBoard from "../../assets/images/board-layer-white-large.svg";
-import SmallWhiteBoard from "../../assets/images/board-layer-white-small.svg";
-import PlayerOne from "../../assets/images/player-one.svg";
-import PlayerTwo from "../../assets/images/player-two.svg";
-import CPU from "../../assets/images/cpu.svg";
-import YellowTurn from "../../assets/images/turn-background-yellow.svg";
-import RedTurn from "../../assets/images/turn-background-red.svg";
+import WhiteBoard from "../assetsConecta4/images/board-layer-white-large.svg";
+import SmallWhiteBoard from "../assetsConecta4/images/board-layer-white-small.svg";
+import PlayerOne from "../assetsConecta4/images/player-one.svg";
+import PlayerTwo from "../assetsConecta4/images/player-two.svg";
+import CPU from "../assetsConecta4/images/cpu.svg";
+import YellowTurn from "../assetsConecta4/images/turn-background-yellow.svg";
+import RedTurn from "../assetsConecta4/images/turn-background-red.svg";
 
-// import RedTurn from "../../assets/images/turn-background-red.svg";
-import YellowMarker from "../../assets/images/marker-yellow.svg";
-import RedMarker from "../../assets/images/marker-red.svg";
+// import RedTurn from "../assetsConecta4/images/turn-background-red.svg";
+import YellowMarker from "../assetsConecta4/images/marker-yellow.svg";
+import RedMarker from "../assetsConecta4/images/marker-red.svg";
 import Styles from "./InGame.module.scss";
 
 const InGame = () => {
