@@ -14,7 +14,7 @@ function GamesSection() {
   const games = [
     {
       id: 1,
-      title: 'Juego 1',
+      title: 'Juego X',
       image: 'https://via.placeholder.com/200',
       description: 'Descripción del juego 1',
     },
