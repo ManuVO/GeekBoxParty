@@ -23,6 +23,9 @@ import YellowMarker from "../assetsConecta4/images/marker-yellow.svg";
 import RedMarker from "../assetsConecta4/images/marker-red.svg";
 import Styles from "./InGame.module.scss";
 
+//Pasarle a la funcion Ingame el objeto Score, para luego
+//hacerle un setScore sumando la puntuacion
+//los scores estan fuera en un componente
 const InGame = () => {
   let winningArray = [
     [0, 1, 2, 3],

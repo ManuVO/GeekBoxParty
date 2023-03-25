@@ -6,7 +6,7 @@ const Rules = () => {
     <div className={Styles.rulesContainer}>
       <h1>Rules</h1>
       <div className={Styles.firstParagraph}>
-        <h2>OBJECTIVE</h2>
+        <h2>OBJETIVO</h2>
         <p>
           Be the first player to connect 4 of the same colored discs in a row
           (either vertically, horizontally, or diagonally).

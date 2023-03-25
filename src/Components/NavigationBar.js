@@ -1,6 +1,7 @@
 import React from 'react';
-import imagen from '../assets/images/GeekBoxParty.png';
+import imagen from '../Assets/img/GeekBoxParty.png';
 function NavigationBar() {
+
   return (
     <nav style={{backgroundColor: '#0d99ff'}}>
       <a href="#" className="logo">
