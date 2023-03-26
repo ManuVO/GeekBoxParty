@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './GamesSection.css';
 
 function GameSquare(props) {
   return (
@@ -11,6 +12,7 @@ function GameSquare(props) {
 }
 
 function GamesSection() {
+  const [slideIndex, setSlideIndex] = useState(0);
   const games = [
     {
       id: 1,
@@ -50,15 +52,39 @@ function GamesSection() {
     },
   ];
 
+  const showPrevGames = () => {
+    if (slideIndex === 0) {
+      setSlideIndex(games.length - 3);
+    } else {
+      setSlideIndex(slideIndex - 3);
+    }
+  };
+
+  const showNextGames = () => {
+    if (slideIndex === games.length - 3) {
+      setSlideIndex(0);
+    } else {
+      setSlideIndex(slideIndex + 3);
+    }
+  };
+
   return (
     <section>
       <h2>Juegos</h2>
       <div className="game-squares">
-        {games.map((game) => (
+        {games.slice(slideIndex, slideIndex + 3).map((game) => (
           <GameSquare key={game.id} title={game.title} image={game.image} description={game.description} />
         ))}
+        <div className="slider-arrows">
+          <span className="slider-arrow slider-prev-arrow" onClick={showPrevGames}>
+            {/* &#8249; */}
+          </span>
+          <span className="slider-arrow slider-next-arrow" onClick={showNextGames}>
+            {/* &#8250; */}
+          </span>
+        </div>
       </div>
-      </section>
+    </section>
   );
 }
 

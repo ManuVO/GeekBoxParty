@@ -1,0 +1,27 @@
+.game-square {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 59%;
+  width: 150px;
+  height: 100px;
+  margin-top: -35px;
+  background: url("../Assets/img/sliderArrow.png") no-repeat center center;
+  cursor: pointer;
+  background-size: cover; /* Agrega esta propiedad */
+  z-index: 2;
+}
+
+.slider-prev-arrow {
+  left: 0;
+}
+
+.slider-next-arrow {
+  right: 0;
+  transform: scaleX(-1);
+}
