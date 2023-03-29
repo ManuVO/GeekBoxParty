@@ -4,10 +4,8 @@ import NavigationBar from '../Components/NavigationBar';
 import Ranking from '../Components/Ranking';
 import GamesSection from '../Components/GamesSection';
 import GameSliders from '../Components/GamesSlider';
-import GameSliders2 from '../Components/GamesSlider2';
 import { useState } from "react";
 import { useFetch } from "../Components/useFetch";
-
 
 function HomeScreen() {
   // BBDD simplificado comienza aquí
@@ -69,8 +67,6 @@ function HomeScreen() {
         <p>Juegos más jugados</p>
         {/* <GamesSection /> */}
         <GameSliders />
-        <p>Juegos que podrían Interesarte</p>
-        <GameSliders2 />
       </div>
     </>
   );

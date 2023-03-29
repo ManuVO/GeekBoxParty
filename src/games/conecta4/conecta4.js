@@ -8,12 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import InGame from "./inGame/InGame";
 function Conecta4() {
   return (
-          <Routes>
-            <Route path="/inGame" element={<InGame />} />
-            <Route path="/rules" element={<Rules />} />
-            <Route path="/" element={<MainMenu />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
+    null
   );
 }
 
