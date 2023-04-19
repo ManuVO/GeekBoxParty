@@ -1,0 +1,23 @@
+/* CSS */
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+  }
+  
+  .description {
+    font-size: 24px;
+    margin: 20px 0;
+    color: #666;
+  }
+  
+  .instruction {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #999;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

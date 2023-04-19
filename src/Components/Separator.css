@@ -1,0 +1,8 @@
+/* Separator.css */
+.separator {
+    width: 80%;
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px auto;
+  }
+  
