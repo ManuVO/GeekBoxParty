@@ -14,6 +14,8 @@ import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 import Home from "./Screens/HomeScreen";
 import Login from "./Screens/Login";
 import Signup from "./Screens/Signup";
+import GameScreen from "./Screens/GameScreen";
+import NotFound from "./Games/conecta4/pages/notFound/NotFound";
 
 
 function App() {
@@ -24,13 +26,11 @@ function App() {
     <>
       <CssBaseline />
         <Routes>
-        {/* <Route path="/inGame" element={<InGame />} />
-        <Route path="/rules" element={<Rules />} /> */}
-        {/* <Route path="/GameScreen" element={<GameScreen />} />
-        <Route path="/" element={<HomeScreen />} />
-        <Route path="*" element={<NotFound />} /> */}
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/login" element={<Login setAuth={setAuth} />} />
         <Route path="/signup" element={<Signup setAuth={setAuth} />} />
+        <Route path="/game/*" element={<GameScreen />} />
+        <Route path="*" element={<NotFound />} />
         <Route
               path="/"
               element={

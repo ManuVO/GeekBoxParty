@@ -16,7 +16,6 @@ import MainMenu from "../Games/conecta4/pages/mainMenu/mainMenu";
 function GameScreen() {
     return (
       <div className="app-container">
-        <Link to="/nueva-pagina">Ir a la nueva página</Link>
         <NavigationBar />
         <div className="content-container">
           <div className="image-container" style={{ display: 'flex', alignItems: 'center', backgroundColor: '#bde3ff' }}>
@@ -27,11 +26,11 @@ function GameScreen() {
             </div>
           </div>
           <div className="GameContainer" style={{ padding: '50px', backgroundColor: '	#FFFFFF' }}>
-        <Routes>
-          <Route path="/ingame" element={<InGame />} />
-          <Route path="/rules" element={<Rules />} />
-          <Route path="/" element={<MainMenu />} />
-        </Routes>
+          <Routes>
+            <Route path="/conecta4" element={<MainMenu />} />
+            <Route path="/ingame" element={<InGame />} />
+            <Route path="/rules" element={<Rules />} />
+          </Routes>
           </div>
         </div>
       </div>

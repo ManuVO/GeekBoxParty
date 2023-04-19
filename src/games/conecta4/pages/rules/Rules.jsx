@@ -30,7 +30,7 @@ const Rules = () => {
           </li>
         </ol>
       </div>
-      <Link to={"/"}>
+      <Link to={"/game/conecta4"}>
         <img src={iconCheck} alt="" />
       </Link>
     </div>

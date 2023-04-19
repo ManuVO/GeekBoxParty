@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import imagen from '../assets/img/GeekBoxParty.png';
-import imagen2 from '../assets/img/Perfil.png';
+import imagen from '../Assets/img/GeekBoxParty.png';
+import imagen2 from '../Assets/img/Perfil.png';
+import { Link } from 'react-router-dom';
 import './NavigationBar.css';
 
 
 function NavigationBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [profileMenuOpen, setProfileMenuOpen] = useState(false);
-  
+
   function toggleMenu() {
     setMenuOpen(!menuOpen);
   }
@@ -18,17 +19,18 @@ function NavigationBar() {
   return (
     <nav>
       <div className="left-section">
-        <a href="#" className="logo">
+        <Link to="/" className="logo">
           <img src={imagen} alt="Logo GeekBoxParty" />
-        </a>
+        </Link>
         <div className="search-bar">
           <input type="text" placeholder="Buscar juegos" />
         </div>
       </div>
+
       <div className="center-section">
         <ul className="menu">
           <li><a href="#">Ranking</a></li>
-          <li><a href="#">Terrenos</a></li>
+          <li><a href="#">Torneos</a></li>
           <li><a href="#">Juegos</a></li>
         </ul>
       </div>
@@ -47,7 +49,7 @@ function NavigationBar() {
           <i className="fas fa-bars"></i>
         </div>
       </div>
-  </nav>
+    </nav>
   );
 }
 
