@@ -8,19 +8,18 @@ import GameScreen from "./Screens/GameScreen";
 // import InGame from "./Games/conecta4/inGame/InGame";
 //import GameScreen from "./Screens/GameScreen";
 import NotFound from "./Games/conecta4/pages/notFound/NotFound";
-import { Routes, Route } from "react-router-dom";
+import React from 'react';
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 
 function App() {
   return (
-    <Routes>
-    {/* <Route path="/inGame" element={<InGame />} />
-    <Route path="/rules" element={<Rules />} /> */}
-    <Route path="/GameScreen" element={<GameScreen />} />
-    <Route path="/" element={<HomeScreen />} />
-    <Route path="*" element={<NotFound />} />
-  </Routes>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/game/*" element={<GameScreen />} />
+      </Routes>
   );
 }
-
 export default App;

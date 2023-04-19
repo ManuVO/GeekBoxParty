@@ -22,7 +22,7 @@ const MainMenu = () => {
           className={Styles.pvp}
           onClick={(event) =>
             event.target.tagName !== "svg"
-              ? navigate("/inGame", { state: { test: player } })
+              ? navigate("/game/ingame", { state: { test: player } })
               : ""
           }
         >
@@ -39,7 +39,7 @@ const MainMenu = () => {
           className={`${Styles.pvpCpu} ${Styles.pvp}`}
           onClick={(event) =>
             event.target.tagName !== "svg"
-              ? navigate("/inGame", { state: { test: player } })
+              ? navigate("/game/ingame", { state: { test: player } })
               : ""
           }
         >
@@ -52,7 +52,7 @@ const MainMenu = () => {
         </button>
       )}
 
-      <Link to={"/rules"} className={Styles.gameRules}>
+      <Link to={"/game/rules"} className={Styles.gameRules}>
         <p> GAME RULES</p>
       </Link>
     </div>

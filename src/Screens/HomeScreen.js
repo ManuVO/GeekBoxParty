@@ -6,6 +6,7 @@ import GamesSection from '../Components/GamesSection';
 import GameSliders from '../Components/GamesSlider';
 import { useState } from "react";
 import { useFetch } from "../Components/useFetch";
+import { Link } from 'react-router-dom';
 
 function HomeScreen() {
   // BBDD simplificado comienza aquí
