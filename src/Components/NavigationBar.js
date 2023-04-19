@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import React, { useState } from "react";
 import imagen from '../Assets/img/GeekBoxParty.png';
 import imagen2 from '../Assets/img/Perfil.png';
 import { Link } from 'react-router-dom';
