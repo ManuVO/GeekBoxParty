@@ -29,24 +29,9 @@ function GameScreen() {
           </div>
         </div>
         <div className="GameContainer" style={{ padding: '50px', backgroundColor: '	#FFFFFF' }}>
-        <Link
-  to="/game/MainMenu"
-  style={{
-    display: 'inline-block',
-    padding: '15px 30px',
-    backgroundColor: 'purple',
-    fontSize: '20px',
-    textDecoration: 'none',
-    borderRadius: '5px',
-    textAlign: 'center',
-  }}
->
-  JUGAR
-</Link>
-
 
           <Routes>
-            <Route path="/MainMenu" element={<MainMenu />} />
+            <Route path="/conecta4" element={<MainMenu />} />
             <Route path="/ingame" element={<InGame />} />
             <Route path="/rules" element={<Rules />} />
           </Routes>
