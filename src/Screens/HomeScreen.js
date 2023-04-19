@@ -1,4 +1,5 @@
-import '../App.css';
+// import '../App.css';
+
 import React from 'react';
 import NavigationBar from '../Components/NavigationBar';
 import Ranking from '../Components/Ranking';
@@ -18,25 +19,25 @@ function HomeScreen() {
       <div>
         <p>
           {
-          loading ? "Loading..." :(data ? (
-          // Mostrar los datos en la interfaz de usuario
-          <>
-            {data.map(({ idUser, email, pass }) => (
-              <div key={email}>
-                <p>idUser: {idUser}</p>
-                <p>Email: {email}</p>
-                <p>Contraseña: {pass}</p>
-              </div>
-            ))}
+            loading ? "Loading..." : (data ? (
+              // Mostrar los datos en la interfaz de usuario
+              <>
+                {data.map(({ idUser, email, pass }) => (
+                  <div key={email}>
+                    <p>idUser: {idUser}</p>
+                    <p>Email: {email}</p>
+                    <p>Contraseña: {pass}</p>
+                  </div>
+                ))}
 
-            <p>{JSON.stringify(data)}</p>
+                <p>{JSON.stringify(data)}</p>
 
-          </>
-        ) : (
-          // Mostrar un mensaje si no hay users
-          <p>No hay users</p>
-        ))
-        }
+              </>
+            ) : (
+              // Mostrar un mensaje si no hay users
+              <p>No hay users</p>
+            ))
+          }
         </p>
       </div>
 
@@ -60,10 +61,11 @@ function HomeScreen() {
           <p>No hay users</p>
         )}
       </div> */}
-
-      <div className="App">
+      <div className="Home">
         <NavigationBar />
-        <Ranking />
+        <div style={{ marginTop: '20px' }}>
+          <Ranking />
+        </div>
         <p>Juegos más jugados</p>
         {/* <GamesSection /> */}
         <GameSliders />
