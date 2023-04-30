@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import imagen from '../Assets/img/GeekBoxParty.png';
-import imagen2 from '../Assets/img/Perfil.png';
+import imagen from '../assets/img/GeekBoxParty.png';
+import imagen2 from '../assets/img/Perfil.png';
 import { Link } from 'react-router-dom';
 import './NavigationBar.css';
 

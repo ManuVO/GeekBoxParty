@@ -5,7 +5,7 @@ import NavigationBar from '../Components/NavigationBar';
 import Ranking from '../Components/Ranking';
 import GamesSection from '../Components/GamesSection';
 import GamesContainer from '../Components/GameContainer'
-import conecta4 from '../Assets/img/conecta4.webp';
+import conecta4 from '../assets/img/conecta4.webp';
 //import Conecta4 from "../Games/conecta4/pages/mainMenu/mainMenu";
 import { Link } from 'react-router-dom';
 import { Routes, Route } from "react-router-dom";
