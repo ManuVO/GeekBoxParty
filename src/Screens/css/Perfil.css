@@ -1,0 +1,167 @@
+.user-profile {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 80%;
+  margin: 0 auto; /* Esto centrará horizontalmente el div */
+  background-color: #fff;
+  margin-top: 1rem;
+}
+
+.user-header {
+  display: block;
+  align-items: center;
+  margin-bottom: 2rem;
+  justify-content: center;
+  margin: 0 auto; /* Esto centrará horizontalmente el div */
+}
+
+.user-bio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 200px;
+  margin: 0 auto; /* Esto centrará horizontalmente el div */
+  background-color: #fff;
+  border-radius:  20px;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.user-columnas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+ 
+}
+
+.user-stats,
+.user-achievements {
+  flex-basis: calc(50% - 1rem);
+  margin-bottom: 0;
+}
+
+.avatar {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+
+h2 {
+  text-decoration-line: underline;
+  color: #000;
+  padding-bottom: 1.2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.user-stats,
+.user-achievements{
+  width: 100%;
+  max-width: 1000px;
+  background-color: #c8e0ee;
+  
+  border-radius:  20px;
+  padding-bottom: 1rem;
+}
+
+.user-stats h2,
+.user-achievements h2{
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-profile button {
+  cursor: pointer;
+}
+
+.user-profile button:hover {
+  background-color: #333;
+}
+
+.user-profile button:active {
+  transform: translateY(2px);
+}
+
+.user-profile .no-data {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .user-profile {
+    padding: 4rem;
+  }
+
+  .user-header {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .avatar {
+    margin-right: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .user-columnas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+  }
+
+  .user-stats,
+  .user-achievements{
+    flex-basis: calc(50% - 1rem);
+    margin-bottom: 0;
+    
+  }
+
+  .user-stats h2,
+  .user-achievements h2{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+  }
+
+  .user-stats li,
+  .user-achievements li{
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+}

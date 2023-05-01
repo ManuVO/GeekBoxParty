@@ -29,7 +29,7 @@ function Ranking() {
   
 
   return (
-    <section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <section className="sectionRanking" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <h2>Conecta 4</h2>
       <Box sx={{ width: 300 }}>
         <Slider

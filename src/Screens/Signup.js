@@ -55,7 +55,7 @@ const Signup = ({ setAuth }) => {
             <Logo />
 
             <Typography sx={{ color: "text.secondary", mb: 5 }}>
-              <h2 className="mt-3">Introduce tus datos</h2>
+              <h2 className="mt-3 text-dark">Introduce tus datos</h2>
             </Typography>
           </HeadingStyle>
 

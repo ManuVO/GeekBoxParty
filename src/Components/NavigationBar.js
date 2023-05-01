@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import imagen from '../assets/img/GeekBoxParty.png';
 import imagen2 from '../assets/img/Perfil.png';
-import { Link } from 'react-router-dom';
 import './NavigationBar.css';
+import { Link as RouterLink } from "react-router-dom";
+import { Link } from "@mui/material";
 
 
 function NavigationBar() {
@@ -17,11 +18,11 @@ function NavigationBar() {
     setProfileMenuOpen(!profileMenuOpen);
   }
   return (
-    <nav>
+    <nav className="navBarGeneral">
       <div className="left-section">
-        <Link to="/" className="logo">
+        <a href="/" className="logo">
           <img src={imagen} alt="Logo GeekBoxParty" />
-        </Link>
+        </a>
         <div className="search-bar">
           <input type="text" placeholder="Buscar juegos" />
         </div>
@@ -38,11 +39,10 @@ function NavigationBar() {
         <div className="profile">
           <img src={imagen2} alt="Avatar" onClick={toggleProfileMenu} />
           <div className={profileMenuOpen ? "dropdown active" : "dropdown"}>
-            <a href="#">Perfil</a>
+            <a href="/perfil">Perfil</a>
             <a href="#">Mis Juegos</a>
             <a href="#">Torneos Activos</a>
-            <a href="#">Amigos</a>
-            <a href="#">Cerrar sesión</a>
+            <a href="/login">Cerrar sesión</a>
           </div>
         </div>
         <div className="menu-toggle" onClick={toggleMenu}>
