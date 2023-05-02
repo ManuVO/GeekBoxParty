@@ -1,30 +1,53 @@
-.App-sushigo {
-  text-align: center;
+.sushigo {
+  background-color: #f8f9fa;
+  padding: 20px;
 }
 
-.App-logo-sushigo {
-  height: 40vmin;
-  pointer-events: none;
+.sushigo-image {
+  width: 50%;
+  max-width: 800px;
+  height: auto;
 }
 
-.App-header-sushigo {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.player-card {
+  width: 100%;
+  height: 100%;
 }
 
-.player-markers-sushigo {
-  display: flex;
-  justify-content: space-between;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.top-left {
+  position: relative;
+}
+
+.top-right {
+  position: relative;
+}
+
+.bottom-left {
+  position: relative;
+}
+
+.bottom-right {
+  position: relative;
 }
 
 
+/* Sushigo.css */
+.player-card-top-left {
+  background-color: rgba(75, 192, 192, 0.2);
+  border: 1px solid rgba(75, 192, 192, 0.8);
+}
 
+.player-card-top-right {
+  background-color: rgba(255, 159, 64, 0.2);
+  border: 1px solid rgba(255, 159, 64, 0.8);
+}
+
+.player-card-bottom-left {
+  background-color: rgba(153, 102, 255, 0.2);
+  border: 1px solid rgba(153, 102, 255, 0.8);
+}
+
+.player-card-bottom-right {
+  background-color: rgba(255, 206, 86, 0.2);
+  border: 1px solid rgba(255, 206, 86, 0.8);
+}
