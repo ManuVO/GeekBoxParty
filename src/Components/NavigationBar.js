@@ -18,32 +18,32 @@ function NavigationBar() {
     setProfileMenuOpen(!profileMenuOpen);
   }
   return (
-    <nav className="navBarGeneral">
-      <div className="left-section">
-        <a href="/" className="logo">
+    <nav className="nav-navBarGeneral">
+      <div className="nav-left-section">
+        <a href="/" className="nav-logo">
           <img src={imagen} alt="Logo GeekBoxParty" />
         </a>
-        <div className="search-bar">
+        <div className="nav-search-bar">
           <input type="text" placeholder="Buscar juegos" />
         </div>
       </div>
 
-      <div className="center-section">
-        <ul className="menu">
+      <div className="nav-center-section">
+        <ul className="nav-menu">
           <li><a href="/ranking">Ranking</a></li>
           <li><a href="/torneos">Torneos</a></li>
           <li><a href="/games">Juegos</a></li>
         </ul>
       </div>
-      <div className="right-section">
-        <div className="profile">
+      <div className="nav-right-section">
+        <div className="nav-profile">
           <img src={imagen2} alt="Avatar" onClick={toggleProfileMenu} />
           <div className={profileMenuOpen ? "dropdown active" : "dropdown"}>
             <a href="/perfil">Perfil</a>
             <a href="/login">Cerrar sesión</a>
           </div>
         </div>
-        <div className="menu-toggle" onClick={toggleMenu}>
+        <div className=".nav-menu-toggle" onClick={toggleMenu}>
           <i className="fas fa-bars"></i>
         </div>
       </div>

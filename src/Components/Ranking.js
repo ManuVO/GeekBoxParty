@@ -1,81 +1,58 @@
 import React, { useState } from 'react';
 import './Ranking.css';
-import Slider from '@mui/material/Slider';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import RankingMensual from './RankingMensual';
 import RankingGlobal from './RankingGlobal';
 import RankingEjemplo from './RankingEjemplo';
-import Select from '@mui/material/Select';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import InputLabel from '@mui/material/InputLabel';
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 function Ranking() {
-  const [sliderValue, setSliderValue] = useState(0);
-  const [selectedGame, setSelectedGame] = useState('conecta4');
+  const [selectedGame, setSelectedGame] = useState(0);
 
-  const handleChange = (event, newValue) => {
-    setSliderValue(newValue);
-  };
+  const games = [
+    { label: 'Conecta 4', value: 'conecta4' },
+    { label: 'Tic Tac Toe', value: 'tictactoe' },
+    { label: 'Sushi Go', value: 'sushigo' },
+    { label: 'Ajedrez', value: 'ajedrez' },
+  ];
 
-  const handleGameChange = (event) => {
-    setSelectedGame(event.target.value);
+  const handleGameChange = (newValue) => {
+    setSelectedGame(newValue);
   };
 
   const renderRankingTable = () => {
-    switch (sliderValue) {
-      case 0:
-        return <RankingGlobal title={`Ranking Global - \${selectedGame}`} />;
-      case 1:
-        return <RankingMensual title={`Ranking Mensual - \${selectedGame}`} />;
-      case 2:
-        return <RankingEjemplo title={`Ranking Ejemplo - \${selectedGame}`} />;
-      default:
-        return null;
-    }
+    return (
+      <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 16 }}>
+        <Box sx={{ marginRight: 16 }}>
+          <Button variant="primary" className="btn-icon-only btn-lg" onClick={() => handleGameChange((selectedGame - 1 + games.length) % games.length)}>
+            <i className="bi bi-arrow-left"></i>
+          </Button>
+        </Box>
+        <Box>
+          <Box sx={{ marginBottom: 8 }}>
+            <Typography variant="h5" component="h2">
+              {games[selectedGame].label}
+            </Typography>
+          </Box>
+          <RankingGlobal title={`Ranking Global - \${games[selectedGame].label}`} />
+          <Box sx={{ marginTop: 16 }}>
+            <RankingMensual title={`Ranking Mensual - \${games[selectedGame].label}`} />
+          </Box>
+        </Box>
+        <Box sx={{ marginLeft: 16 }}>
+          <Button variant="primary" className="btn-icon-only btn-lg" onClick={() => handleGameChange((selectedGame + 1) % games.length)}>
+            <i className="bi bi-arrow-right"></i>
+          </Button>
+        </Box>
+      </Box>
+    );
   };
 
   return (
-    <section className="sectionRanking" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <FormControl sx={{ minWidth: 120 }}>
-        <InputLabel id="game-select-label">Juego</InputLabel>
-        <Select
-          labelId="game-select-label"
-          id="game-select"
-          value={selectedGame}
-          onChange={handleGameChange}
-        >
-          <MenuItem value="conecta4">Conecta 4</MenuItem>
-          <MenuItem value="tictactoe">Tic Tac Toe</MenuItem>
-          <MenuItem value="sushigo">Sushi Go</MenuItem>
-          <MenuItem value="ajedrez">Ajedrez</MenuItem>
-        </Select>
-      </FormControl>
-      <h2>{selectedGame}</h2>
-      <Box sx={{ width: 300 }}>
-        <Slider
-          aria-label="Ranking slider"
-          value={sliderValue}
-          onChange={handleChange}
-          step={1}
-          marks
-          min={0}
-          max={2}
-          valueLabelFormat={(value) => {
-            switch (value) {
-              case 0:
-                return 'Global';
-              case 1:
-                return 'Mensual';
-              case 2:
-                return 'Ejemplo';
-              default:
-                return '';
-            }
-          }}
-        />
-      </Box>
+    <section className="sectionRanking" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       {renderRankingTable()}
     </section>
   );

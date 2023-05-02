@@ -19,10 +19,9 @@ import Torneos from "./Screens/Torneos";
 import CreaTorneoClasico from "./Screens/TorneoClasico";
 import CreaTorneoYinkana from "./Screens/TorneoYinkana";
 import NotFound from "./Games/conecta4/pages/notFound/NotFound";
-import Perfil from './Screens/Perfil';
+import Perfil from "./Screens/Perfil";
 import Games from "./Screens/AllGames";
-import Ranking from './Screens/RankingScreen';
-
+import Ranking from "./Screens/RankingScreen";
 
 function App() {
   const [auth, setAuth] = useState(true);
@@ -31,28 +30,27 @@ function App() {
   return (
     <>
       <CssBaseline />
-        <Routes>
-        {/* <Route path="/" element={<Home />} /> */}
+      <Routes>
         <Route path="/login" element={<Login setAuth={setAuth} />} />
         <Route path="/signup" element={<Signup setAuth={setAuth} />} />
         <Route path="/game/:game/*" element={<GameScreen />} />
         <Route path="/torneos" element={<Torneos />} />
         <Route path="/torneos/creaClasico" element={<CreaTorneoClasico />} />
         <Route path="/torneos/creaYinkana" element={<CreaTorneoYinkana />} />
-        <Route path="/perfil" element={<Perfil/>} />
-        <Route path="/games" element={<Games/>} />
-        <Route path="/ranking" element={<Ranking/>} />
+        <Route path="/perfil" element={<Perfil />} />
+        <Route path="/games" element={<Games />} />
+        <Route path="/ranking" element={<Ranking />} />
         <Route path="*" element={<NotFound />} />
         <Route
-              path="/"
-              element={
-                auth ? (
-                  <Home setAuth={setAuth} />
-                ) : (
-                  <Navigate to="/login" state={{ from: location }} replace />
-                )
-              }
-            />
+          path="/"
+          element={
+            auth ? (
+              <Home setAuth={setAuth} />
+            ) : (
+              <Navigate to="/login" state={{ from: location }} replace />
+            )
+          }
+        />
       </Routes>
     </>
   );
