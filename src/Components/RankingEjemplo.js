@@ -3,7 +3,7 @@ import './Ranking.css';
 
 function RankingEjemplo() {
   return (
-    <section>
+    <section className="sectionRanking"> 
       <h2>TOP Ejemplo</h2>
       <table>
         <thead>

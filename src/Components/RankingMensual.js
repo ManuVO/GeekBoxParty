@@ -3,7 +3,7 @@ import './Ranking.css';
 
 function RankingMensual() {
   return (
-    <section>
+    <section className="sectionRanking"> 
       <h2>TOP Mensual</h2>
       <table>
         <thead>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/Perfil.css';
-import Avatar from '../assets/img/avatar.png';
+import Avatar from '../Assets/img/avatar.png';
 import Logros from '../Components/Logros';
 import '../Components/Logros.css';
 import NavigationBar from '../Components/NavigationBar';

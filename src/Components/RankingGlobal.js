@@ -3,7 +3,7 @@ import './Ranking.css';
 
 function RankingGlobal() {
   return (
-    <section>
+    <section className="sectionRanking"> 
       <h2>TOP Global</h2>
       <table>
         <thead>

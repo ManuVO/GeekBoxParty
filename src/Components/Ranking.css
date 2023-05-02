@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 
-h2 {
+.sectionRanking h2 {
   color: #FFF;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -17,12 +17,13 @@ h2 {
   color: black;
 }
 
-table {
+.sectionRanking table {
   width: 100%;
   border-collapse: collapse;
 }
 
-th, td {
+.sectionRanking th,
+.sectionRanking td {
   border: 1px solid #FFF;
   padding: 0.5rem;
   text-align: center;
@@ -30,12 +31,12 @@ th, td {
   font-size: 1.2rem; /* Aumenta el tamaño de fuente en las celdas de la tabla */
 }
 
-th {
+.sectionRanking th {
   background-color: #FFC107;
   color: #000;
 }
 
-tbody tr:nth-child(odd) {
+.sectionRanking tbody tr:nth-child(odd) {
   background-color: rgba(255, 255, 255, 0.1);
 }
 

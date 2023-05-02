@@ -15,6 +15,9 @@ import Home from "./Screens/HomeScreen";
 import Login from "./Screens/Login";
 import Signup from "./Screens/Signup";
 import GameScreen from "./Screens/GameScreen";
+import Torneos from "./Screens/Torneos";
+import CreaTorneoClasico from "./Screens/TorneoClasico";
+import CreaTorneoYinkana from "./Screens/TorneoYinkana";
 import NotFound from "./Games/conecta4/pages/notFound/NotFound";
 import Perfil from './Screens/Perfil';
 
@@ -31,6 +34,9 @@ function App() {
         <Route path="/login" element={<Login setAuth={setAuth} />} />
         <Route path="/signup" element={<Signup setAuth={setAuth} />} />
         <Route path="/game/:game/*" element={<GameScreen />} />
+        <Route path="/torneos" element={<Torneos />} />
+        <Route path="/torneos/creaClasico" element={<CreaTorneoClasico />} />
+        <Route path="/torneos/creaYinkana" element={<CreaTorneoYinkana />} />
         <Route path="/perfil" element={<Perfil/>} />
         <Route path="*" element={<NotFound />} />
         <Route

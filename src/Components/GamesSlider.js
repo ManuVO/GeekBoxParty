@@ -1,6 +1,6 @@
 //import ReactCardSlider from 'react-card-slider-component';
 import ReactCardSlider from "./ReactCardSlider";
-import imagen1 from "../assets/img/tictactoe.png";
+import imagen1 from "../Assets/img/tictactoe.png";
 import { Link, useNavigate } from "react-router-dom";
 
 //Funcion de lo que ocurre cuando haces click en una imagen

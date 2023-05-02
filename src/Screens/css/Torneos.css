@@ -1,0 +1,120 @@
+.torneos {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    color: #0C8CE9;
+}
+
+.torneos h1,
+.torneos h2 {
+    text-align: center;
+}
+
+.torneo-filter-container {
+    border: 2px solid #0C8CE9;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* css torneos list */
+.torneos-list {
+    font-family: Arial, sans-serif;
+    color: #0C8CE9;
+}
+
+.torneos-list th,
+.torneos-list td {
+    text-align: center;
+}
+
+.torneos-list .jugadores,
+.torneos-list .tiempoPorTurno {
+    width: 100px;
+}
+
+.torneos-list .btn {
+    font-size: 16px;
+}
+
+.torneos-list .btn-primary {
+    background-color: #0C8CE9;
+    border-color: #0C8CE9;
+}
+
+.torneos-list .btn-primary:hover {
+    background-color: #0077C2;
+    border-color: #0077C2;
+}
+
+.torneos-list .btn-success {
+    background-color: #28A745;
+    border-color: #28A745;
+}
+
+.torneos-list .btn-success:hover {
+    background-color: #1E7E34;
+    border-color: #1E7E34;
+}
+
+
+/* css formulario dinamico del array TorneoYinkana (NO FUNCIONA)*/
+
+/* .game-form-1 {
+    background-color: red;
+}
+
+.game-form-2 {
+    background-color: red;
+}
+
+.game-form-3 {
+    background-color: red;
+} */
+
+/* imagenes banderines con letrero */
+
+.imagen:hover {
+    cursor: pointer;
+}
+
+.imagen {
+    max-width: 20vw;
+    max-height: 55vw;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.imagenes-contenedor {
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* banderines */
+
+.imagen-banderin-izquierda {
+    float: left;
+    margin: 100px 0px 0px 0;
+    width: 250px;
+    height: auto;
+}
+
+.imagen-banderin-derecha {
+    float: right;
+    margin: 100px 0 20px 20px;
+    width: 250px;
+    height: auto;
+}
+
+/* alertas home */
+
+.alert-fixed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}

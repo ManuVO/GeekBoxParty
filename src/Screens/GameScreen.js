@@ -2,12 +2,16 @@
 import "./css/GameScreen.css";
 import React from "react";
 import NavigationBar from "../Components/NavigationBar";
-import ImgConecta4 from "../assets/img/conecta4.webp";
-import ImgTicTacToe from "../assets/img/tictactoe.png";
+import ImgConecta4 from "../Assets/img/conecta4.webp";
+import ImgTicTacToe from "../Assets/img/tictactoe.png";
 //import Conecta4 from "../Games/conecta4/pages/mainMenu/mainMenu";
 import { Routes, Route, useParams } from "react-router-dom";
 import Conecta4 from "../Games/conecta4/conecta4";
 import Tictactoe from "../Games/tictactoe/tictactoe"
+//Imports routes del conecta4
+import Rules from "../Games/conecta4/pages/rules/Rules";
+import InGame from "../Games/conecta4/inGame/InGame";
+import MainMenu from "../Games/conecta4/pages/mainMenu/mainMenu";
 function GameScreen() {
 
   const { game } = useParams();
@@ -35,7 +39,7 @@ function GameScreen() {
     solitaire: "",
     chess: "",
   };
-  
+
   const bodyGame = {
     tictactoe: "El tres en raya es un juego de mesa para dos jugadores que se juega en un tablero de 3x3 casillas. Cada jugador marca alternadamente una casilla con su símbolo (generalmente una X y un O) con el objetivo de conseguir tres símbolos en línea, ya sea horizontal, vertical o diagonalmente, antes que su oponente. Es un juego sencillo pero muy popular y divertido.",
     conecta4: "Conecta 4 es un juego de dos jugadores en el que el objetivo es turnarse y marcar los espacios correctos en una cuadrícula de 6x7. Puedes jugar contra otro jugador o contra la máquina para prácticar.",
@@ -68,7 +72,7 @@ function GameScreen() {
           />
           <div
             className="text-container text-fit"
-            style={{ padding: "10px"}}
+            style={{ padding: "10px" }}
           >
             <h1 className="title text-fit">{title}</h1>
             <p className="description text-fit">
@@ -77,10 +81,22 @@ function GameScreen() {
           </div>
         </div>
         <div className="" style={{ padding: "50px", backgroundColor: "#FFFFFF" }}>
-          {componente}
+          {game === 'conecta5' ? (
+            <>
+              {console.log('%c Estás dentro del if', 'color: blue')}
+              <Routes>
+                <Route path="/" element={<MainMenu />} />
+                <Route path="/ingame" element={<InGame />} />
+                <Route path="/rules" element={<Rules />} />
+              </Routes>
+            </>
+          ) : (
+            // Aquí puedes colocar otro componente o contenido si "game" no es igual a "conecta"
+            componente
+          )}
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

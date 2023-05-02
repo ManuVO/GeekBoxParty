@@ -1,13 +1,13 @@
 
 import './Logros.css';
 import styled from "@emotion/styled";
-import maestroprestigio from '../assets/img/logros//Maestro-removebg-preview.png'
-import profesional from '../assets/img/logros/profesional.png'
+import maestroprestigio from '../Assets/img/logros//Maestro-removebg-preview.png'
+import profesional from '../Assets/img/logros/profesional.png'
 import React, { useState } from "react";
-import partidas from '../assets/img/logros/1000 games.png'
-import torneos from '../assets/img/logros/torneo.png'
-import victory from '../assets/img/logros/victory.png'
-import candado from '../assets/img/logros/candado.png'
+import partidas from '../Assets/img/logros/1000 games.png'
+import torneos from '../Assets/img/logros/torneo.png'
+import victory from '../Assets/img/logros/victory.png'
+import candado from '../Assets/img/logros/candado.png'
 
 const Logro = styled.div`
   display: flex;
