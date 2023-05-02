@@ -26,23 +26,23 @@ function Ranking() {
   const renderRankingTable = () => {
     return (
       <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginTop: 16 }}>
-        <Box sx={{ marginRight: 16 }}>
+        <Box sx={{ marginRight: 16, marginTop: -13 }}>
           <Button variant="primary" className="btn-icon-only btn-lg" onClick={() => handleGameChange((selectedGame - 1 + games.length) % games.length)}>
             <i className="bi bi-arrow-left"></i>
           </Button>
         </Box>
         <Box>
-          <Box sx={{ marginBottom: 8 }}>
+          <Box sx={{ marginBottom: -4, marginTop: -13 }}> {/* Aquí se eliminó el margen inferior */}
             <Typography variant="h5" component="h2">
               {games[selectedGame].label}
             </Typography>
           </Box>
           <RankingGlobal title={`Ranking Global - \${games[selectedGame].label}`} />
-          <Box sx={{ marginTop: 16 }}>
+          <Box sx={{ marginTop: 0 }}> {/* Aquí se eliminó el margen superior */}
             <RankingMensual title={`Ranking Mensual - \${games[selectedGame].label}`} />
           </Box>
         </Box>
-        <Box sx={{ marginLeft: 16 }}>
+        <Box sx={{ marginLeft: 16, marginTop: -13 }}>
           <Button variant="primary" className="btn-icon-only btn-lg" onClick={() => handleGameChange((selectedGame + 1) % games.length)}>
             <i className="bi bi-arrow-right"></i>
           </Button>
@@ -52,7 +52,7 @@ function Ranking() {
   };
 
   return (
-    <section className="sectionRanking" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <section className="sectionRanking" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: 0}}>
       {renderRankingTable()}
     </section>
   );
