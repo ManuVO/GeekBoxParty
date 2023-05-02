@@ -6,6 +6,7 @@ import NavigationBar from "../Components/NavigationBar";
 import { Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/Torneos.css';
+import Footer from "../Components/Footer";
 
 const Torneos = () => {
     const [filteredTorneos, setFilteredTorneos] = useState([]);
@@ -29,6 +30,7 @@ const Torneos = () => {
                 <h1>¡Crea un Torneo!</h1>
                 <TorneoCreate />
             </div>
+            <Footer />
         </>
     );
 };

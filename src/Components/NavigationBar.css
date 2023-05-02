@@ -185,6 +185,8 @@ a:-webkit-any-link {
   }
 }
 
+
+
 @media screen and (max-width: 767px) {
   .nav-navBarGeneral {
     padding: 10px;

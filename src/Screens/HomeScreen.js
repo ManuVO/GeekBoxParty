@@ -7,6 +7,7 @@ import GameSliders from '../Components/GamesSlider';
 import Separator from '../Components/Separator';
 import { useState } from "react";
 import { useFetch } from "../Components/useFetch";
+import Footer from "../Components/Footer";
 
 function HomeScreen() {
   // BBDD simplificado comienza aquí
@@ -21,6 +22,7 @@ function HomeScreen() {
         </div>
         <Separator /> {/* Utiliza Separator */}
         <GameSliders />
+        <Footer />
       </div>
     </>
   );

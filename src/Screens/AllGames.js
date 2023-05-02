@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import GameCard from '../Components/GameCard';
 import NavigationBar from '../Components/NavigationBar';
+import Footer from '../Components/Footer';
 
 function AllGames() {
   const games = [
@@ -39,6 +40,7 @@ function AllGames() {
           <GameCard key={index} game={game} />
         ))}
       </Container>
+      <Footer />
     </>
   );
 }
