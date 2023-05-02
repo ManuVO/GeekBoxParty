@@ -30,7 +30,7 @@ function NavigationBar() {
 
       <div className="center-section">
         <ul className="menu">
-          <li><a href="#">Ranking</a></li>
+          <li><a href="/ranking">Ranking</a></li>
           <li><a href="/torneos">Torneos</a></li>
           <li><a href="/games">Juegos</a></li>
         </ul>

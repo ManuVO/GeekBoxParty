@@ -21,6 +21,7 @@ import CreaTorneoYinkana from "./Screens/TorneoYinkana";
 import NotFound from "./Games/conecta4/pages/notFound/NotFound";
 import Perfil from './Screens/Perfil';
 import Games from "./Screens/AllGames";
+import Ranking from './Screens/RankingScreen';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path="/torneos/creaYinkana" element={<CreaTorneoYinkana />} />
         <Route path="/perfil" element={<Perfil/>} />
         <Route path="/games" element={<Games/>} />
+        <Route path="/ranking" element={<Ranking/>} />
         <Route path="*" element={<NotFound />} />
         <Route
               path="/"

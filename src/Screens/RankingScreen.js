@@ -19,10 +19,8 @@ function HomeScreen() {
       <div className="Home">
         <NavigationBar />
         <div style={{ marginTop: '20px' }}>
-          {/* <Ranking /> */}
+          <Ranking />
         </div>
-        <Separator /> {/* Utiliza Separator */}
-        <GameSliders />
       </div>
     </>
   );
