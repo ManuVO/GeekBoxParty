@@ -4,10 +4,12 @@ import React from "react";
 import NavigationBar from "../Components/NavigationBar";
 import ImgConecta4 from "../Assets/img/conecta4.webp";
 import ImgTicTacToe from "../Assets/img/tictactoe.png";
+import ImgSushigo from "../Assets/img/sushigoIcono.jpeg";
 //import Conecta4 from "../Games/conecta4/pages/mainMenu/mainMenu";
 import { Routes, Route, useParams } from "react-router-dom";
 import Conecta4 from "../Games/conecta4/conecta4";
 import Tictactoe from "../Games/tictactoe/tictactoe"
+import Sushigo from "../Games/sushi-go/SushiGo"
 //Imports routes del conecta4
 import Rules from "../Games/conecta4/pages/rules/Rules";
 import InGame from "../Games/conecta4/inGame/InGame";
@@ -22,6 +24,7 @@ function GameScreen() {
     brisca: "Brisca",
     solitaire: "Solitaire",
     chess: "Chess",
+    sushigo: "Sushi-Go",
   };
 
   const imgGame = {
@@ -30,6 +33,7 @@ function GameScreen() {
     brisca: "Brisca",
     solitaire: "Solitaire",
     chess: "Chess",
+    sushigo: ImgSushigo
   };
 
   const gameComponent = {
@@ -38,6 +42,7 @@ function GameScreen() {
     brisca: "",
     solitaire: "",
     chess: "",
+    sushigo: <Sushigo />,
   };
 
   const bodyGame = {
@@ -46,6 +51,7 @@ function GameScreen() {
     brisca: "La Brisca es un juego de naipes popular en España e Italia que implica ganar bazas para acumular puntos utilizando una baraja de 40 cartas con valores numéricos y jerarquías. Es un juego estratégico y emocionante que se juega a menudo en parejas.",
     solitaire: "El solitario es un juego de cartas para un solo jugador que consiste en ordenar las cartas en cuatro pilas separadas por palos, desde el As hasta el Rey. Requiere habilidad y estrategia para ganar y es un pasatiempo popular en todo el mundo.",
     chess: "El ajedrez es un juego de mesa para dos jugadores que implica mover piezas estratégicamente para capturar al rey del oponente en un tablero de 64 casillas. Es un juego intelectual y desafiante que se ha jugado durante siglos.",
+    sushigo: "El ajedrez es un juego de mesa para dos jugadores que implica mover piezas estratégicamente para capturar al rey del oponente en un tablero de 64 casillas. Es un juego intelectual y desafiante que se ha jugado durante siglos.",
   };
 
   const title = titleGame[game];

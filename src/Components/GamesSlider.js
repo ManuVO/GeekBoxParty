@@ -47,19 +47,22 @@ export default function GameSlider() {
       description: "Descripcion",
       clickEvent: () => sliderClick("chess"),
     },
-     {
+    {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Parch%C3%ADs.svg/320px-Parch%C3%ADs.svg.png",
       title: "Parchís",
       description:
         "Juego de mesa tradicional español que se juega con dados y fichas, donde el objetivo es mover las fichas por el tablero hasta llevarlas a la meta antes que los demás jugadores.",
+      clickEvent: () => sliderClick("parchis"),
     },
+
     {
       image:
         "https://play-lh.googleusercontent.com/_fvEc13w1eutCwraTy2TKq-zDx2vfq1rPKoDHeMCSeaSGEww4PIdJL9ugY7hKk4qfx0",
       title: "Exploding Kittens",
       description:
         "Es un juego de cartas de estrategia y suerte en el que los jugadores intentan evitar a toda costa ser eliminados por cartas de Gatitos Explosivos.",
+      clickEvent: () => sliderClick("explodingkittens"),
     },
     {
       image:
@@ -68,7 +71,7 @@ export default function GameSlider() {
       description: "Descripcion",
       clickEvent: () => sliderClick("catan"),
     },
-{
+    {
       image:
         "https://www.ludonauta.es/files/ludico/juegos-mesas/juego-mesa-virus-2015-1544494627.jpg",
       title: "Virus!",
