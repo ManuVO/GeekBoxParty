@@ -1,10 +1,8 @@
 // import '../App.css';
 import ReactDOM from "react-dom/client";
-import Chat from "../Components/Chat";
 import React from 'react';
 import NavigationBar from '../Components/NavigationBar';
 import Ranking from '../Components/Ranking';
-import GamesSection from '../Components/GamesSection';
 import GameSliders from '../Components/GamesSlider';
 import Separator from '../Components/Separator';
 import { useState } from "react";

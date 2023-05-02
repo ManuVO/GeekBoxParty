@@ -1,6 +1,5 @@
 // import '../App.css';
 import ReactDOM from "react-dom/client";
-import Chat from "../Components/Chat";
 import React from 'react';
 import NavigationBar from '../Components/NavigationBar';
 import Ranking from '../Components/Ranking';
