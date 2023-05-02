@@ -52,7 +52,7 @@ const ReactCardSlider = props => {
     }), /*#__PURE__*/_react.default.createElement("p", {
       className: "slider-card-title"
     }, slide.title), /*#__PURE__*/_react.default.createElement("p", {
-      className: "slider-card-description"
+      className: "slider-card-description text-truncate"
     }, slide.description));
   })), /*#__PURE__*/_react.default.createElement(_md.MdChevronRight, {
     size: 40,

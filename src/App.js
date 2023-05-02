@@ -20,6 +20,7 @@ import CreaTorneoClasico from "./Screens/TorneoClasico";
 import CreaTorneoYinkana from "./Screens/TorneoYinkana";
 import NotFound from "./Games/conecta4/pages/notFound/NotFound";
 import Perfil from './Screens/Perfil';
+import Games from "./Screens/AllGames";
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Route path="/torneos/creaClasico" element={<CreaTorneoClasico />} />
         <Route path="/torneos/creaYinkana" element={<CreaTorneoYinkana />} />
         <Route path="/perfil" element={<Perfil/>} />
+        <Route path="/games" element={<Games/>} />
         <Route path="*" element={<NotFound />} />
         <Route
               path="/"

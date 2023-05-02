@@ -14,31 +14,31 @@ export default function GameSlider() {
   const slides = [
     {
       image:
-        "https://play-lh.googleusercontent.com/1BY66vvf7fq1-huDAsJayeOmvOXk0OzuO_jUGGVdMBgObjrtTb7evTl6f_RCxs9g7eo",
+        "https://i.imgur.com/ucxy7Dd.png",
       title: "3 en Raya",
-      description: "This is a description",
+      description: "Un clásico juego de estrategia para dos jugadores.",
       clickEvent: () => sliderClick("tictactoe"),
     },
     {
       image:
-        "https://http2.mlstatic.com/D_NQ_NP_890373-MCO31001523399_062019-O.webp",
+        "https://i.imgur.com/dkDI0aG.jpg",
       title: "Conecta 4",
-      description: "Conecta 4",
+      description: "Conecta cuatro fichas del mismo color en línea recta para ganar.",
       clickEvent: () => sliderClick("conecta4"),
     },
     {
       image:
-        "https://play-lh.googleusercontent.com/ZOiteEBaiWRRej4jaVUTuTl86C6G35nLEzv0FSTnsJqjxzDxmQkdMd5vdy8iecT1XEI1",
-      title: "Brisca",
-      description: "This is a fourth description",
-      clickEvent: () => sliderClick("brisca"),
+        "https://i.imgur.com/j3npLEQ.jpg",
+      title: "Sushi Go",
+      description: "Un divertido juego de cartas en el que debes recolectar el mejor sushi.",
+      clickEvent: () => sliderClick("sushigo"),
     },
     {
       image:
-        "https://i0.wp.com/is1-ssl.mzstatic.com/image/thumb/Purple123/v4/83/d5/64/83d56429-fa15-2edc-b547-80dc05586dbf/A-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg?w=1200&ssl=1",
-      title: "Solitario",
-      description: "This is a fifth description",
-      clickEvent: () => sliderClick("solitaire"),
+        "https://i.imgur.com/hVkjqlP.png",
+      title: "Brisca",
+      description: "Un popular juego de cartas en el que debes ganar tantos puntos como sea posible.",
+      clickEvent: () => sliderClick("brisca"),
     },
     {
       image:

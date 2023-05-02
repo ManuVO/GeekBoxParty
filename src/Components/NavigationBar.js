@@ -32,7 +32,7 @@ function NavigationBar() {
         <ul className="menu">
           <li><a href="#">Ranking</a></li>
           <li><a href="/torneos">Torneos</a></li>
-          <li><a href="#">Juegos</a></li>
+          <li><a href="/games">Juegos</a></li>
         </ul>
       </div>
       <div className="right-section">
