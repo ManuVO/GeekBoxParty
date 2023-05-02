@@ -32,7 +32,7 @@ function Board({ xIsNext, squares, onPlay }) {
 
   return (
     <>
-      <div className="status">{status}</div>
+      <h5 className="status">{status}</h5>
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
@@ -48,6 +48,20 @@ function Board({ xIsNext, squares, onPlay }) {
         <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
         <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
       </div>
+      <br />
+      {status === "Winner: X" ? (
+        <h5>
+          Player {winner}: Ha ganado 20 elo y 40 Board Boins.
+          <br />
+          Player O: Ha perdido 10 de elo y 20 Board Coins.
+        </h5>
+      ) : status === "Winner: O" ? (
+        <h5>
+          Player {winner}: Ha ganado 20 elo y 40 Board Boins.
+          <br />
+          Player X: Ha perdido 10 de elo y 20 Board Coins.
+        </h5>
+      ) : ""}
     </>
   );
 }

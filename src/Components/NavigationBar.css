@@ -38,11 +38,12 @@
     border-radius: 20px;
     border: none;
     background-color: #c8e0ee;
-    color: #d3d3d3;
+    color: #000000;
     font-size: 16px;
     font-weight: 300;
     padding: 5px;
     width: 300px;
+    padding-left: 4%;
   }
   
   .search-bar i {
