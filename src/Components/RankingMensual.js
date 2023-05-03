@@ -16,22 +16,22 @@ function RankingMensual() {
         <tbody>
           <tr>
             <td>1</td>
-            <td>Joaquín</td>
+            <td>JoakiGPI</td>
             <td>1869</td>
           </tr>
           <tr>
             <td>2</td>
-            <td>Cristina</td>
+            <td>AriaHG</td>
             <td>1780</td>
           </tr>
           <tr>
             <td>3</td>
-            <td>Pedro</td>
+            <td>Mircan</td>
             <td>1500</td>
           </tr>
           <tr>
             <td>4</td>
-            <td>Manu</td>
+            <td>ManuTNT</td>
             <td>1000</td>
           </tr>
         </tbody>

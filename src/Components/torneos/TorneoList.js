@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TorneoList = ({ torneos }) => {
@@ -14,6 +14,33 @@ const TorneoList = ({ torneos }) => {
         { juego: ['Risk', 'Brisca', 'Sushi-Go'], nombre: 'Torneo 2', tipo: 'Yinkana', plazas: 2, jugadores: 16, duracion: 14, tiempoPorTurno: 120, organizador: 'Organizador 2' },
         { juego: ['Sushi-Go'], nombre: 'Temporadas Sushi-Go', tipo: 'Temporadas', plazas: 25, jugadores: 32, duracion: 1, tiempoPorTurno: 2, organizador: 'GeekBoxParty' }
     ];
+
+    const [joinState, setJoinState] = useState(new Array(torneos2.length).fill(false));
+    const [showMessage, setShowMessage] = useState({ index: null, text: '' });
+
+    const handleButtonClick = (index) => {
+        setJoinState((prevState) => {
+            const newState = [...prevState];
+            newState[index] = !newState[index];
+            return newState;
+        });
+
+        const message = joinState[index] ? (
+            <span className="text-danger p-2 rounded" style={{ backgroundColor: '#dc3545 !important' }}>
+                Has abandonado el torneo
+            </span>
+        ) : (
+            <span>
+                ¡Te has unido al torneo, buena suerte!
+            </span>
+        );
+
+        setShowMessage({ index, text: message });
+
+        setTimeout(() => {
+            setShowMessage({ index: null, text: '' });
+        }, 3000);
+    };
 
     return (
         <div className="container">
@@ -46,7 +73,18 @@ const TorneoList = ({ torneos }) => {
                             <td>{torneo.organizador}</td>
                             <td>
                                 <button className="btn btn-primary mr-2">Ver Torneo</button>
-                                <button className="btn btn-success">Unirte</button>
+                                <button
+                                    className={`btn ${joinState[index] ? 'btn-danger' : 'btn-success'} mr-2 mt-1`}
+                                    onClick={() => handleButtonClick(index)}
+                                >
+                                    {joinState[index] ? 'Cancelar' : 'Unirte'}
+                                </button>
+
+                                {showMessage.index === index && (
+                                    <div className="alert alert-info mt-2" role="alert">
+                                        {showMessage.text}
+                                    </div>
+                                )}
                             </td>
                         </tr>
                     ))}

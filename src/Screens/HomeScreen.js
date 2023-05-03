@@ -2,7 +2,7 @@
 import ReactDOM from "react-dom/client";
 import React from 'react';
 import NavigationBar from '../Components/NavigationBar';
-import Ranking from '../Components/Ranking';
+import Noticiario from '../Components/Noticiario';
 import GameSliders from '../Components/GamesSlider';
 import Separator from '../Components/Separator';
 import { useState } from "react";
@@ -18,7 +18,7 @@ function HomeScreen() {
       <div className="Home">
         <NavigationBar />
         <div style={{ marginTop: '20px' }}>
-          {/* <Ranking /> */}
+          <Noticiario />
         </div>
         <Separator /> {/* Utiliza Separator */}
         <GameSliders />

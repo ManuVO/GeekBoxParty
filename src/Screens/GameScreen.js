@@ -27,6 +27,7 @@ function GameScreen() {
     solitaire: "Solitaire",
     chess: "Chess",
     sushigo: "Sushi-Go",
+    explodingkittens: "Eploding Kittens",
   };
 
   const imgGame = {
@@ -36,6 +37,7 @@ function GameScreen() {
     solitaire: "Solitaire",
     chess: "Chess",
     sushigo: ImgSushigo,
+    explodingkittens: "#",
   };
 
   const gameComponent = {
@@ -60,6 +62,8 @@ function GameScreen() {
       "El ajedrez es un juego de mesa para dos jugadores que implica mover piezas estratégicamente para capturar al rey del oponente en un tablero de 64 casillas. Es un juego intelectual y desafiante que se ha jugado durante siglos.",
     sushigo:
       "El ajedrez es un juego de mesa para dos jugadores que implica mover piezas estratégicamente para capturar al rey del oponente en un tablero de 64 casillas. Es un juego intelectual y desafiante que se ha jugado durante siglos.",
+    explodingkittens:
+      "Gatos que Explotan, concha de su madre, sun gatinhos explusivos",
   };
 
   const title = titleGame[game];

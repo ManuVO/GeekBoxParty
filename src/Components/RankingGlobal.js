@@ -16,22 +16,22 @@ function RankingGlobal() {
         <tbody>
           <tr>
             <td>1</td>
-            <td>Joaquín</td>
-            <td>5600</td>
+            <td>AriaHG</td>
+            <td>5670</td>
           </tr>
           <tr>
             <td>2</td>
-            <td>Manu</td>
-            <td>4500</td>
+            <td>JoakiGPI</td>
+            <td>5600</td>
           </tr>
           <tr>
             <td>3</td>
-            <td>Cristina</td>
-            <td>3780</td>
+            <td>ManuTNT</td>
+            <td>4500</td>
           </tr>
           <tr>
             <td>4</td>
-            <td>Pedro</td>
+            <td>Mircan</td>
             <td>3000</td>
           </tr>
         </tbody>
