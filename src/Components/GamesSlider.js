@@ -28,7 +28,7 @@ export default function GameSlider() {
     },
     {
       image:
-        "https://i.imgur.com/j3npLEQ.jpg",
+        "https://i.imgur.com/j3npLEQ.png?1",
       title: "Sushi Go",
       description: "Un divertido juego de cartas en el que debes recolectar el mejor sushi.",
       clickEvent: () => sliderClick("sushigo"),
@@ -44,7 +44,7 @@ export default function GameSlider() {
       image:
         "https://play-lh.googleusercontent.com/ngTyk7oHMyHgdaDLWJ7iJ_CtvZvjU5pYn-bugNpGOrzxjNU4dxIavkoeP4F0Zao2HQ",
       title: "Ajedrez",
-      description: "Descripcion",
+      description: "El ajedrez es un juego de estrategia para dos jugadores que se juega en un tablero de 64 casillas de colores claros y oscuros, dispuestas en ocho filas y ocho columnas.",
       clickEvent: () => sliderClick("chess"),
     },
     {

@@ -1,4 +1,4 @@
-.user-profile {
+.perfil-user-profile {
   display: block;
   flex-direction: column;
   align-items: center;
@@ -9,15 +9,16 @@
   margin-top: 1rem;
 }
 
-.user-header {
-  display: block;
+.perfil-user-header {
+  display: flex;
   align-items: center;
-  margin-bottom: 2rem;
   justify-content: center;
+  margin-bottom: 2rem;
   margin: 0 auto; /* Esto centrará horizontalmente el div */
+  padding-left: 15%;
 }
 
-.user-bio{
+.perfil-user-bio {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,12 +26,13 @@
   height: 200px;
   margin: 0 auto; /* Esto centrará horizontalmente el div */
   background-color: #fff;
-  border-radius:  20px;
+  border-radius: 20px;
   padding: 1rem;
   margin-top: 2rem;
 }
 
-.user-columnas {
+
+.perfil-user-columnas {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -38,13 +40,7 @@
  
 }
 
-.user-stats,
-.user-achievements {
-  flex-basis: calc(50% - 1rem);
-  margin-bottom: 0;
-}
-
-.avatar {
+.perfil-avatar {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
@@ -52,116 +48,152 @@
   margin-bottom: 1rem;
 }
 
-h1 {
+.perfil-geekcoin {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  padding-right: 1%;
+}
+
+.perfil-user-profile h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   text-decoration: none;
+  padding-left: 5%;
 }
 
-h2 {
+.perfil-user-profile h2 {
   text-decoration-line: underline;
   color: #000;
   padding-bottom: 1.2rem;
 }
 
-p {
-  font-size: 1.2rem;
+
+.perfil-user-profile p {
+  font-size: 1rem;
   margin-bottom: 1rem;
-  text-align: center;
+  text-align: left;
 }
 
-.user-stats,
-.user-achievements{
+.perfil-user-stats{
   width: 100%;
-  max-width: 1000px;
+  max-width: 22%;
   background-color: #c8e0ee;
   
   border-radius:  20px;
   padding-bottom: 1rem;
 }
 
-.user-stats h2,
-.user-achievements h2{
+.perfil-user-achievements{
+  max-width: 40%;
+  background-color: #c8e0ee;
+  
+  border-radius:  20px;
+  padding-bottom: 1rem;
+}
+
+.perfil-user-compras{
+  width: 100%;
+  max-width: 35%;
+  background-color: #c8e0ee;
+  
+  border-radius:  20px;
+  padding-bottom: 1rem;
+}
+
+.perfil-user-stats h2,
+.perfil-user-achievements h2,
+.perfil-user-compras h2{
+  display: flex;
   font-weight: bold;
   margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
 }
 
-ul {
+.perfil-user-profile ul {
   list-style: none;
-  padding-left: 0;
+  padding-left: 15px;
+  padding-bottom: 5px;
 }
 
-li {
+.perfil-user-profile li {
   font-size: 1rem;
   margin-bottom: 0.5rem;
+  padding-left: 40px;
 }
 
-.user-profile button {
+.perfil-user-profile button {
   cursor: pointer;
 }
 
-.user-profile button:hover {
+.perfil-user-profile button:hover {
   background-color: #333;
 }
 
-.user-profile button:active {
+.perfil-user-profile button:active {
   transform: translateY(2px);
 }
 
-.user-profile .no-data {
+.perfil-user-profile .no-data {
   font-size: 1.2rem;
   text-align: center;
   margin-top: 2rem;
 }
 
 @media (min-width: 768px) {
-  .user-profile {
+  .perfil-user-profile {
     padding: 4rem;
   }
 
-  .user-header {
+  .perfil-user-header {
     flex-direction: row;
     justify-content: center;
     margin-bottom: 4rem;
   }
 
-  .avatar {
+  .perfil-avatar {
     margin-right: 2rem;
   }
 
-  h1 {
+  .perfil-user-profile h1 {
     font-size: 3rem;
     margin-bottom: 0;
   }
 
-  p {
-    font-size: 1.5rem;
+  .perfil-user-profile p {
+    font-size: 1rem;
     margin-bottom: 2rem;
   }
 
-  .user-columnas {
+  .perfil-user-columnas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 4rem;
   }
 
-  .user-stats,
-  .user-achievements{
+  .perfil-user-stats,
+  .perfil-user-achievements,
+  .perfil-user-compras{
     flex-basis: calc(50% - 1rem);
     margin-bottom: 0;
     
   }
 
-  .user-stats h2,
-  .user-achievements h2{
-    font-size: 2.5rem;
+  .perfil-user-stats h2,
+  .perfil-user-achievements h2,
+  .perfil-user-compras h2{
+    font-size: 2rem;
     margin-bottom: 0;
   }
 
-  .user-stats li,
-  .user-achievements li{
-    font-size: 1.5rem;
+  .perfil-user-stats li,
+  .perfil-user-achievements li,
+  .perfil-user-compras li{
+    font-size: 1rem;
     margin-bottom: 0;
   }
 }

@@ -22,7 +22,7 @@ function AllGames() {
       id: 'sushigo',
       title: 'Sushi Go',
       description: 'Un divertido juego de cartas en el que debes recolectar el mejor sushi.',
-      image: 'https://i.imgur.com/j3npLEQ.jpg',
+      image: 'https://i.imgur.com/j3npLEQ.png?1',
     },
     {
       id: 'brisca',

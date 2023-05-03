@@ -22,6 +22,7 @@ import NotFound from "./Games/conecta4/pages/notFound/NotFound";
 import Perfil from "./Screens/Perfil";
 import Games from "./Screens/AllGames";
 import Ranking from "./Screens/RankingScreen";
+import Comunidad from "./Screens/GuiaComunidad";
 
 function App() {
   const [auth, setAuth] = useState(true);
@@ -40,6 +41,7 @@ function App() {
         <Route path="/perfil" element={<Perfil />} />
         <Route path="/games" element={<Games />} />
         <Route path="/ranking" element={<Ranking />} />
+        <Route path="/comunidad" element={<Comunidad />} />
         <Route path="*" element={<NotFound />} />
         <Route
           path="/"

@@ -8,7 +8,8 @@
   top: 0;
   left: 0;
   z-index: 1;
-
+  position: relative;
+  overflow: visible;
 }
 .nav-left-section {
   display: flex;
@@ -127,17 +128,21 @@ a:-webkit-any-link {
   width: 40px;
   border-radius: 50%;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .dropdown {
   display: none;
-  position: absolute;
-  top: 60px;
-  right: 0;
+  position: fixed;
+  top: 55px;
+  right: 15px;
+  max-height: 200px;
+  overflow-y: auto;
   background-color: #fff;
   color: #23262b;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+  z-index: 1000;
+  border-radius: 3px;;
 }
 
 .dropdown a {
@@ -160,9 +165,12 @@ a:-webkit-any-link {
 
 .dropdown.active {
   display: block;
+  position: fixed;
   min-width: fit-content;
-  padding: 20%;
+  padding: 1%;
+  z-index: 1000;
 }
+
 
 .menu-toggle {
   display: none;
@@ -224,6 +232,7 @@ a:-webkit-any-link {
   .nav-menu-toggle {
     display: block;
     margin-right: 10px;
+    cursor: pointer;
   }
   .dropdown {
     top: 40px;

@@ -4,7 +4,7 @@ import imagen2 from "../Assets/img/Perfil.png";
 import "./NavigationBar.css";
 import { Link as RouterLink } from "react-router-dom";
 import { Link } from "@mui/material";
-import { Dropdown, InputGroup } from "react-bootstrap";
+import { Dropdown, InputGroup, Nav} from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 function NavigationBar() {
@@ -156,6 +156,9 @@ function NavigationBar() {
           <li>
             <a href="/games">Juegos</a>
           </li>
+          <li>
+            <a href="/comunidad">Comunidad</a>
+          </li>
         </ul>
       </div>
       <div className="nav-right-section">
@@ -166,7 +169,7 @@ function NavigationBar() {
             <a href="/login">Cerrar sesión</a>
           </div>
         </div>
-        <div className=".nav-menu-toggle" onClick={toggleMenu}>
+        <div className="nav-menu-toggle" onClick={toggleMenu}>
           <i className="fas fa-bars"></i>
         </div>
       </div>

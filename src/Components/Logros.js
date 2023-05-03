@@ -21,13 +21,13 @@ const Logro = styled.div`
 `;
 
 const Imagen = styled.img`
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   margin-right: 1rem;
 `;
 const Imagenrango = styled.img`
-  width: 200px;
-  height: 170px;
+  width: 90px;
+  height: 90px;
   
   align-items: center;
  
@@ -45,14 +45,14 @@ background-color: white;
 `;
 const Descripcion = styled.div`
   flex: 1;
-  font-size: 1.5em;
+  font-size: 1rem;
   color: white;
   text-stroke: 2px white;
   -webkit-text-stroke: 0.6px black; /* para compatibilidad con Safari */
 `;
 const Rango = styled.div`
-
-color: white;
+  font-size: 0.65rem;
+  color: white;
   align-items: center;
   text-align:center;
   -webkit-text-stroke: 0.6px black; /* para compatibilidad con Safari */
