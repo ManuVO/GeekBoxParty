@@ -12,6 +12,8 @@ const TorneoClasico = () => {
     const [duracion, setDuracion] = useState(1);
     const [tiempo, setTiempo] = useState(1);
     const [privacidad, setPrivacidad] = useState('');
+    const [menu_juego, setMenu_juego] = useState('MenuEstandar');
+
 
     const handleJuegoChange = (event) => {
         setJuego(event.target.value);
@@ -55,20 +57,37 @@ const TorneoClasico = () => {
                                 </select>
                             </div>
                             {juego === 'Sushi-Go' && (
-                                <div className="form-group">
-                                    <label htmlFor="jugadores_juego">Número de Jugadores:</label>
-                                    <select
-                                        className="form-control"
-                                        id="jugadores_juego"
-                                        value={jugadores_juego}
-                                        onChange={(e) => setJugadores_juego(parseInt(e.target.value))}
-                                    >
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
-                                </div>
+                                <>
+                                    <div className="form-group">
+                                        <label htmlFor="jugadores_juego">Número de Jugadores:</label>
+                                        <select
+                                            className="form-control"
+                                            id="jugadores_juego"
+                                            value={jugadores_juego}
+                                            onChange={(e) => setJugadores_juego(parseInt(e.target.value))}
+                                        >
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                    </div>
+                                    <div className="form-group">
+                                        <label htmlFor="menu_juego">Menú del Juego:</label>
+                                        <select
+                                            className="form-control"
+                                            id="menu_juego"
+                                            value={menu_juego}
+                                            onChange={(e) => setMenu_juego(e.target.value)}
+                                        >
+                                            <option value="MenuEstandar">Menu Estandar</option>
+                                            <option value="SinPalillos">Sin Palillos</option>
+                                            <option value="SinPuddings">Sin Puddings</option>
+                                            <option value="SinGyozas">Sin Gyozas</option>
+                                            <option value="SinSashimis">Sin Sashimis</option>
+                                        </select>
+                                    </div>
+                                </>
 
                             )}
                             <div className="form-group">

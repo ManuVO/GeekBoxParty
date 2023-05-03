@@ -4,6 +4,7 @@ import noticia1 from '../Assets/img/ariachg.png'
 import noticia3 from '../Assets/img/geekExperto.png'
 import noticia2 from '../Assets/img/7wonders.jpg'
 import noticia4 from '../Assets/img/tictactoe.png'
+import { useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Card, CardImg, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 
 const Noticiario = () => {
@@ -13,19 +14,28 @@ const Noticiario = () => {
             src: noticia3,
             titulo: 'Geek Estrategia: Catán',
             subtitulo: 'Gestiona tus recursos en Catán con los consejos del Geek Experto Juanjo',
+            ruta: '/comunidad/geekExperto', // Agrega la ruta aquí
         },
         {
             src: noticia1,
             titulo: 'La jugadora AriaHG lidera Conecta 4',
             subtitulo: 'Aria anda conectada y asalta la primera posición con 5670 puntos.',
+            ruta: '#', // Agrega la ruta aquí
         },
 
         {
             src: noticia4,
             titulo: 'Siguiente Temporada: 3 en Raya',
             subtitulo: 'Ve preparando esas rayas',
+            ruta: '#', // Agrega la ruta aquí
         },
     ];
+
+    const navigate = useNavigate();
+
+    const handleOnClick = (path) => {
+        navigate(path);
+    };
 
 
     return (
@@ -56,8 +66,9 @@ const Noticiario = () => {
                                         width="100%"
                                         height="90px"
                                         src={noticia.src}
-                                        alt={`Imagen noticia \${index + 1}`}
+                                        alt={`Imagen noticia ${index + 1}`}
                                         className="ml-5"
+                                        onClick={() => handleOnClick(noticia.ruta)} // Reemplaza '/ruta-deseada' con la ruta a la que quieres navegar
                                     />
                                 </Col>
                                 <Col md="8">

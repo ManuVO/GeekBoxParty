@@ -25,6 +25,7 @@ import Games from "./Screens/AllGames";
 import Ranking from "./Screens/RankingScreen";
 import Comunidad from "./Screens/GuiaComunidad";
 import FAQS from "./Screens/FAQs";
+import GeekExperto from "./Screens/Articulo";
 
 function App() {
   const [auth, setAuth] = useState(true);
@@ -46,6 +47,7 @@ function App() {
         <Route path="/ranking" element={<Ranking />} />
         <Route path="/comunidad" element={<Comunidad />} />
         <Route path="/comunidad/FAQS" element={<FAQS />} />
+        <Route path="/comunidad/geekExperto" element={<GeekExperto />} />
         <Route path="*" element={<NotFound />} />
         <Route
           path="/"

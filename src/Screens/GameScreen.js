@@ -92,6 +92,7 @@ function GameScreen() {
             <h1 className="title text-fit">{title}</h1>
             <p className="description text-fit">{body}</p>
           </div>
+          {/* Aqui añade un btn-success Invitar a un Amigo */}
         </div>
         <div
           className=""

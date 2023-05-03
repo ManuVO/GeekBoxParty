@@ -15,6 +15,7 @@ const TorneoClasico = () => {
     const [tiempo, setTiempo] = useState(1);
     const [privacidad, setPrivacidad] = useState('');
     const [orden, setOrden] = useState('');
+    const [menu_juego, setMenu_juego] = useState('MenuEstandar');
     const games = ['Conecta4', 'Sushi-Go', 'Tic-Tac-Toe'];
 
     const handleNumGamesChange = (e) => {
@@ -65,6 +66,7 @@ const TorneoClasico = () => {
                                         </option>
                                     ))}
                                 </select>
+
                             </div>
                             {Array.from({ length: numGames }, (_, i) => i + 1).map((gameIndex) => (
                                 <div key={gameIndex}>
@@ -84,16 +86,33 @@ const TorneoClasico = () => {
                                         </select>
                                     </div>
                                     {selectedGames[gameIndex - 1] === 'Sushi-Go' && (
-                                        <div className="form-group">
-                                            <label htmlFor={`playersGame\${gameIndex}`}>Jugadores Juego {gameIndex}:</label>
-                                            <select className="form-control" id={`playersGame\${gameIndex}`}>
-                                                {[2, 3, 4, 5].map((num) => (
-                                                    <option key={num} value={num}>
-                                                        {num}
-                                                    </option>
-                                                ))}
-                                            </select>
-                                        </div>
+                                        <>
+                                            <div className="form-group">
+                                                <label htmlFor={`playersGame\${gameIndex}`}>Jugadores Juego {gameIndex}:</label>
+                                                <select className="form-control" id={`playersGame\${gameIndex}`}>
+                                                    {[2, 3, 4, 5].map((num) => (
+                                                        <option key={num} value={num}>
+                                                            {num}
+                                                        </option>
+                                                    ))}
+                                                </select>
+                                            </div>
+                                            <div className="form-group">
+                                                <label htmlFor="menu_juego">Menú del Juego:</label>
+                                                <select
+                                                    className="form-control"
+                                                    id="menu_juego"
+                                                    value={menu_juego}
+                                                    onChange={(e) => setMenu_juego(e.target.value)}
+                                                >
+                                                    <option value="MenuEstandar">Menu Estandar</option>
+                                                    <option value="SinPalillos">Sin Palillos</option>
+                                                    <option value="SinPuddings">Sin Puddings</option>
+                                                    <option value="SinGyozas">Sin Gyozas</option>
+                                                    <option value="SinSashimis">Sin Sashimis</option>
+                                                </select>
+                                            </div>
+                                        </>
                                     )}
                                     <div className="form-group">
                                         <label htmlFor={`timeGame\${gameIndex}`}>Tiempo por Turno Juego {gameIndex} (Minutos):</label>
