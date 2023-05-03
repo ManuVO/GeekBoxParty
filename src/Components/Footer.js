@@ -21,27 +21,27 @@ const Footer = () => {
             <h5 className="text-uppercase">Enlaces</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#!" className="text-dark">
+                <a href="/games" className="text-dark">
                   Juegos
                 </a>
               </li>
               <li>
-                <a href="#!" className="text-dark">
+                <a href="/torneos" className="text-dark">
                   Torneos
                 </a>
               </li>
               <li>
-                <a href="#!" className="text-dark">
+                <a href="/ranking" className="text-dark">
                   Ranking
                 </a>
               </li>
               <li>
-                <a href="#!" className="text-dark">
+                <a href="/comunidad" className="text-dark">
                   Comunidad
                 </a>
               </li>
               <li>
-                <a href="#!" className="text-dark">
+                <a href="/comunidad/FAQS" className="text-dark">
                   FAQS
                 </a>
               </li>

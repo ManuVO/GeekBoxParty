@@ -16,7 +16,7 @@ function faqs() {
                     <Card.Header><h4>Administrar tu cuenta</h4></Card.Header>
                     <Card.Body>
 
-                        <Accordion defaultActiveKey="0" className="text-right">
+                        <Accordion defaultActiveKey="0" className="text-left">
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>Acerca de las cuentas suspendidas</Accordion.Header>
                                 <Accordion.Body>
@@ -150,7 +150,7 @@ function faqs() {
 
 
                 <br /><br /><br /><br />
-                <Card className="text-right">
+                <Card className="text-left">
                     <Card.Header><h4>Reglas y políticas</h4></Card.Header>
                     <Card.Body>
 
