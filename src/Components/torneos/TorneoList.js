@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const TorneoList = ({ torneos }) => {
@@ -17,6 +18,12 @@ const TorneoList = ({ torneos }) => {
 
     const [joinState, setJoinState] = useState(new Array(torneos2.length).fill(false));
     const [showMessage, setShowMessage] = useState({ index: null, text: '' });
+
+    const navigate = useNavigate();
+
+    const handleVerTorneoClick = (ruta) => {
+        navigate(ruta);
+    };
 
     const handleButtonClick = (index) => {
         setJoinState((prevState) => {
@@ -72,7 +79,7 @@ const TorneoList = ({ torneos }) => {
                             <td>{torneo.tiempoPorTurno}</td>
                             <td>{torneo.organizador}</td>
                             <td>
-                                <button className="btn btn-primary mr-2">Ver Torneo</button>
+                                <button className="btn btn-primary mr-2" onClick={() => handleVerTorneoClick('/torneos/verTorneo')}>Ver Torneo</button>
                                 <button
                                     className={`btn ${joinState[index] ? 'btn-danger' : 'btn-success'} mr-2 mt-1`}
                                     onClick={() => handleButtonClick(index)}

@@ -11,7 +11,7 @@ import Footer from '../Components/Footer';
 
 const Perfil = ({}) => {
   let avatar = Avatar
-  let username = "Mario"
+  let username = "Mircan"
   let bio = "Me gustan los juegos de mesa y soy muy bueno en el tres en raya. Los gatos son mi pasión y me encanta hacer amigos. Juguemos juntos."
   let gamesJugados = 3
   let amigos = 3

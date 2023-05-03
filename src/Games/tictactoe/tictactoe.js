@@ -72,15 +72,11 @@ function Board({ xIsNext, squares, onPlay }) {
       <Modal.Body>
         {status === "Winner: X" ? (
           <h5>
-            Player {winner}: Ha ganado 20 elo y 40 Board Boins.
-            <br />
-            Player O: Ha perdido 10 de elo y 20 Board Coins.
+            ¡VICTORIA! Has ganado 25 elo y 4 GeekCoins.
           </h5>
         ) : status === "Winner: O" ? (
           <h5>
-            Player {winner}: Ha ganado 20 elo y 40 Board Boins.
-            <br />
-            Player X: Ha perdido 10 de elo y 20 Board Coins.
+            ¡Derrota!<br /> Has perdido 25 elo y ganaste 2 GeekCoins.
           </h5>
         ) : ""}
       </Modal.Body>

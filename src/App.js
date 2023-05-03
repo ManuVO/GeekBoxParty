@@ -18,6 +18,7 @@ import GameScreen from "./Screens/GameScreen";
 import Torneos from "./Screens/Torneos";
 import CreaTorneoClasico from "./Screens/TorneoClasico";
 import CreaTorneoYinkana from "./Screens/TorneoYinkana";
+import VerTorneo from "./Screens/VerTorneo";
 import NotFound from "./Games/conecta4/pages/notFound/NotFound";
 import Perfil from "./Screens/Perfil";
 import Games from "./Screens/AllGames";
@@ -38,6 +39,7 @@ function App() {
         <Route path="/torneos" element={<Torneos />} />
         <Route path="/torneos/creaClasico" element={<CreaTorneoClasico />} />
         <Route path="/torneos/creaYinkana" element={<CreaTorneoYinkana />} />
+        <Route path="/torneos/verTorneo" element={<VerTorneo />} />
         <Route path="/perfil" element={<Perfil />} />
         <Route path="/games" element={<Games />} />
         <Route path="/ranking" element={<Ranking />} />

@@ -733,12 +733,12 @@ const InGame = () => {
           </p>
           <h2 class="scoreColor">WINS</h2>
           {!isPlayer && turn
-              ? <p>Has perdido 20 de elo y 50 Board Coins.</p>
+              ? <p>Has perdido 25 de elo y ganado 2 GeekCoins.</p>
               : !isPlayer
-              ? <p>Has ganado 50 de elo y 100 Board Coins.</p>
+              ? <p>Has ganado 25 de elo y 4 GeekCoins.</p>
               : winner === "yellow"
-              ? <p>Has ganado 50 de elo y 100 Board Coins.</p>
-              : <p>Has ganado 50 de elo y 100 Board Coins.</p>
+              ? <p>Has ganado 25 de elo y 4 GeekCoins.</p>
+              : <p>Has perdido 25 de elo y ganado 2 GeekCoins.</p>
               }
           <button onClick={handleReset}>PLAY AGAIN</button>
         </div>

@@ -14,68 +14,66 @@ export default function GameSlider() {
   const slides = [
     {
       image:
-        "https://i.imgur.com/ucxy7Dd.png",
+        "https://i.imgur.com/W5ORHOd.png",
       title: "3 en Raya",
       description: "Un clásico juego de estrategia para dos jugadores.",
       clickEvent: () => sliderClick("tictactoe"),
     },
     {
       image:
-        "https://i.imgur.com/dkDI0aG.jpg",
+        "https://i.imgur.com/DnW7MIG.png",
       title: "Conecta 4",
       description: "Conecta cuatro fichas del mismo color en línea recta para ganar.",
       clickEvent: () => sliderClick("conecta4"),
     },
     {
       image:
-        "https://i.imgur.com/j3npLEQ.png?1",
+        "https://i.imgur.com/ZMP5KV8.png",
       title: "Sushi Go",
       description: "Un divertido juego de cartas en el que debes recolectar el mejor sushi.",
       clickEvent: () => sliderClick("sushigo"),
     },
     {
       image:
-        "https://i.imgur.com/hVkjqlP.png",
+        "https://i.imgur.com/0o8c50S.png",
       title: "Brisca",
       description: "Un popular juego de cartas en el que debes ganar tantos puntos como sea posible.",
       clickEvent: () => sliderClick("brisca"),
     },
     {
       image:
-        "https://play-lh.googleusercontent.com/ngTyk7oHMyHgdaDLWJ7iJ_CtvZvjU5pYn-bugNpGOrzxjNU4dxIavkoeP4F0Zao2HQ",
+        "https://i.imgur.com/dvdxKk3.png",
       title: "Ajedrez",
       description: "El ajedrez es un juego de estrategia para dos jugadores que se juega en un tablero de 64 casillas de colores claros y oscuros, dispuestas en ocho filas y ocho columnas.",
       clickEvent: () => sliderClick("chess"),
     },
     {
       image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Parch%C3%ADs.svg/320px-Parch%C3%ADs.svg.png",
+        "https://i.imgur.com/AYxaQnI.png",
       title: "Parchís",
-      description:
-        "Juego de mesa tradicional español que se juega con dados y fichas, donde el objetivo es mover las fichas por el tablero hasta llevarlas a la meta antes que los demás jugadores.",
+      description: "Juego de mesa tradicional español que se juega con dados y fichas, donde el objetivo es mover las fichas por el tablero hasta llevarlas a la meta antes que los demás jugadores.",
       clickEvent: () => sliderClick("parchis"),
     },
 
     {
       image:
-        "https://play-lh.googleusercontent.com/_fvEc13w1eutCwraTy2TKq-zDx2vfq1rPKoDHeMCSeaSGEww4PIdJL9ugY7hKk4qfx0",
+        "https://i.imgur.com/gd1hoSc.png",
       title: "Exploding Kittens",
-      description:
-        "Es un juego de cartas de estrategia y suerte en el que los jugadores intentan evitar a toda costa ser eliminados por cartas de Gatitos Explosivos.",
+      description: "Es un juego de cartas de estrategia y suerte en el que los jugadores intentan evitar a toda costa ser eliminados por cartas de Gatitos Explosivos.",
       clickEvent: () => sliderClick("explodingkittens"),
     },
     {
       image:
-        "https://juegosdemesayrol.com/wp-content/uploads/Catan-El-juego-10.jpg",
+        "https://i.imgur.com/aeASuSS.png",
       title: "Catán",
-      description: "Descripcion",
+      description: "El objetivo del juego es conquistar la isla de Catán acumulando materias primas con las que podrás construir carreteras, pueblos y ciudades. Un juego en el que la estrategia y el talante negociador resultan fundamentales. Para muchos es el mejor juego de mesa de todos los tiempos.",
       clickEvent: () => sliderClick("catan"),
     },
     {
       image:
-        "https://www.ludonauta.es/files/ludico/juegos-mesas/juego-mesa-virus-2015-1544494627.jpg",
+        "https://i.imgur.com/d5rN6sT.png",
       title: "Virus!",
-      description: "Descripcion",
+      description: "Consigue completar un cuerpo sano, reuniendo en tu área de juego los cuatro órganos que propone el juego: cerebro, corazón, estómago y hueso.",
       clickEvent: () => sliderClick("virus"),
     },
   ];

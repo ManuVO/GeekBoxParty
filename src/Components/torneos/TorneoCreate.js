@@ -12,7 +12,6 @@ const TorneoCreate = () => {
 
     const handleImageClick = (ruta) => {
         navigate(ruta);
-        console.log('%c Click Imagen', 'color: blue; font-size: 20px;');
     };
     const handleImageTemporadaClick = () => {
         setShowAlert(true);
