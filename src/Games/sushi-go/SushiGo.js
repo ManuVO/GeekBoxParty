@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import ComponenteLog from '../../Components/Log';
+import ComponenteContador from '../../Components/Contador'
 import Sushigoimg from '../../Assets/img/sushigo.jpg';
 import './Sushigo.css';
+
+import avatarImg from '../../Assets/img/avatar.png';
 
 class Sushigo extends Component {
   // ...otros métodos y variables
@@ -14,17 +17,46 @@ class Sushigo extends Component {
     this.setState({ logMounted: true }, () => {
       // Líneas preestablecidas
       const lines = [
-        { nick: 'Juego', text: '---RONDA 2---CARTA 3---' },
-        { nick: 'AriaHG', text: 'Juega Nigiri Tortilla' },
-        { nick: 'Mircan', text: 'Juega Wasabi' },
+        { nick: 'Juego', text: '--COMIENZA RONDA 2--' },
+        { nick: 'Juego', text: '---RONDA 2---CARTA 1---' },
+        { nick: 'AriaHG', text: 'Juega Makix1' },
+        { nick: 'Mircan', text: 'Juega Sashimi' },
         { nick: 'ManuTNT', text: 'Juega Makix3' },
         { nick: 'JoakiGPI', text: 'Juega Tempura' },
+        { nick: 'Juego', text: '---RONDA 2---CARTA 2---' },
+        { nick: 'AriaHG', text: 'Juega Makix2' },
+        { nick: 'Mircan', text: 'Juega Nigiri Tortilla' },
+        { nick: 'ManuTNT', text: 'Juega Makix2' },
+        { nick: 'JoakiGPI', text: 'Juega Gyoza' },
+        { nick: 'Juego', text: '---RONDA 2---CARTA 3---' },
+        { nick: 'AriaHG', text: 'Juega Wasabi' },
+        { nick: 'Mircan', text: 'Juega Tempura' },
+        { nick: 'ManuTNT', text: 'Juega Makix2' },
+        { nick: 'JoakiGPI', text: 'Juega Gyoza' },
         { nick: 'Juego', text: '---RONDA 2---CARTA 4---' },
-        { nick: 'AriaHG', text: 'Juega Pudding' },
-        { nick: 'JoakiGPI', text: 'Juega Tempura' },
-        { nick: 'ManuTNT', text: 'Juega Gyoza' },
-        { nick: 'Mircan', text: 'Nigiri Calamar' },
+        { nick: 'AriaHG', text: 'Juega Wasabi' },
+        { nick: 'Mircan', text: 'Nigiri Sashimi' },
+        { nick: 'ManuTNT', text: 'Juega Tempura' },
+        { nick: 'JoakiGPI', text: 'Juega Pudding' },
         { nick: 'Juego', text: '---RONDA 2---CARTA 5---' },
+        { nick: 'AriaHG', text: 'Juega Nigiri Calamar' },
+        { nick: 'Mircan', text: 'Nigiri Tempura' },
+        { nick: 'ManuTNT', text: 'Juega Tempura' },
+        { nick: 'JoakiGPI', text: 'Juega Gyoza' },
+        { nick: 'Juego', text: '---RONDA 2---CARTA 6---' },
+        { nick: 'AriaHG', text: 'Juega Nigiri Calamar' },
+        { nick: 'Mircan', text: 'Nigiri Sashimi' },
+        { nick: 'ManuTNT', text: 'Juega Pudding' },
+        { nick: 'JoakiGPI', text: 'Juega Gyoza' },
+        { nick: 'Juego', text: '---RONDA 2---CARTA 7---' },
+        { nick: 'AriaHG', text: 'Juega Nigiri Salmon' },
+        { nick: 'Mircan', text: 'Nigiri Nigiri Salmon' },
+        { nick: 'ManuTNT', text: 'Juega Makix1' },
+        { nick: 'JoakiGPI', text: 'Juega Nigiri Salmon' },
+        { nick: 'Juego', text: '--FINALIZA RONDA 2--' },
+        { nick: 'Juego', text: '--COMIENZA RONDA 3--' },
+
+
       ];
 
       lines.forEach(({ nick, text }) => {
@@ -70,15 +102,20 @@ class Sushigo extends Component {
     const renderPlayerCard = (player, position) => (
       <Card style={playerCardStyles[position]}>
         <Card.Body>
-          <Card.Title>{player.username}</Card.Title>
-          <Card.Subtitle>Ronda: {player.ronda}</Card.Subtitle>
-          <Card.Text>
-            Puntos ronda actual: {player.puntosrondaactual}
-            <br />
-            Puntos actuales: {player.puntosactuales}
-            <br />
-            Número de cartas: {player.numcartas}
-          </Card.Text>
+          <div className="d-flex justify-content-between align-items-center">
+            <div className="card-content">
+              <Card.Title>{player.username}</Card.Title>
+              <Card.Subtitle>Ronda: {player.ronda}</Card.Subtitle>
+              <Card.Text>
+                Puntos ronda actual: {player.puntosrondaactual}
+                <br />
+                Puntos actuales: {player.puntosactuales}
+                <br />
+                Número de cartas: {player.numcartas}
+              </Card.Text>
+            </div>
+            <img src={avatarImg} alt="Avatar" className="avatar-marcador" />
+          </div>
         </Card.Body>
       </Card>
     );
@@ -90,7 +127,9 @@ class Sushigo extends Component {
             <Col md={3}>
               {renderPlayerCard(players[0], 'topLeft')}
             </Col>
-            <Col md={6}></Col>
+            <Col md={6}>
+              <ComponenteContador />
+            </Col>
             <Col md={3}>
               {renderPlayerCard(players[1], 'topRight')}
             </Col>

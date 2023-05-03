@@ -118,3 +118,15 @@
     text-align: center;
     box-sizing: border-box;
 }
+
+
+/* moneda torneo */
+/* styles.css */
+.torneo-geekcoin {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    padding-right: 1%;
+  }
+  
