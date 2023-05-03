@@ -40,6 +40,11 @@ const Footer = () => {
                   Comunidad
                 </a>
               </li>
+              <li>
+                <a href="#!" className="text-dark">
+                  FAQS
+                </a>
+              </li>
             </ul>
           </Col>
         </Row>
