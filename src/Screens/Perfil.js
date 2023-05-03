@@ -7,6 +7,7 @@ import '../Components/Logros.css';
 import NavigationBar from '../Components/NavigationBar';
 import moneda from '../Assets/img/premios/moneda mario.png'
 import Footer from '../Components/Footer';
+import { Card, Row, Col } from 'react-bootstrap';
 
 
 const Perfil = ({}) => {
@@ -69,7 +70,7 @@ const Perfil = ({}) => {
             <Logros />
           </div>
           <div className="perfil-user-compras">
-            <h2>Canjea tu Premio</h2>
+            <h2>Tienda GeekCoins</h2>
             <Premios />
           </div>
         </div>

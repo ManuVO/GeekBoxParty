@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import BracketTorneo from '../Components/torneos/BracketTorneo';
 import PremiosTorneo from '../Components/torneos/PremiosTorneo';
 import NavigationBar from "../Components/NavigationBar";
@@ -12,6 +12,18 @@ const Torneos = () => {
     const toggleStarted = () => {
         setIsStarted(!isStarted);
     };
+
+    const generateRandomCode = (length) => {
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+        let result = '';
+        for (let i = 0; i < length; i++) {
+            result += characters.charAt(Math.floor(Math.random() * characters.length));
+        }
+        return result;
+    };
+
+    const randomCode = useMemo(() => generateRandomCode(6), []);
+
 
     return (
         <>
@@ -47,6 +59,10 @@ const Torneos = () => {
                         <li className="list-group-item">Nº Jugadores: 32</li>
                         <li className="list-group-item">Organizador: GeekBoxParty</li>
                         <li className="list-group-item">Estado Actual: {isStarted ? 'Empezado' : 'No empezado'}</li>
+                        <li className="list-group-item ">
+                            Código para Unirse a Partida:   <span className="btn-primary">{randomCode}</span>
+                        </li>
+
                     </ul>
                     <div className="card-body">
                         {isStarted ? (

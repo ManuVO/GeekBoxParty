@@ -1,6 +1,6 @@
 // import '../App.css';
 import "./css/GameScreen.css";
-import React from "react";
+import React, { useState } from 'react';
 import NavigationBar from "../Components/NavigationBar";
 import ImgConecta4 from "../Assets/img/conecta4.webp";
 import ImgTicTacToe from "../Assets/img/tictactoe.png";
@@ -9,13 +9,13 @@ import ImgSushigo from "../Assets/img/sushigoIcono.jpeg";
 import { Routes, Route, useParams } from "react-router-dom";
 import Conecta4 from "../Games/conecta4/conecta4";
 import Tictactoe from "../Games/tictactoe/tictactoe";
+import { Container, Row, Button, Modal } from "react-bootstrap";
 import Sushigo from "../Games/sushi-go/SushiGo";
 //Imports routes del conecta4
 import Rules from "../Games/conecta4/pages/rules/Rules";
 import InGame from "../Games/conecta4/inGame/InGame";
 import MainMenu from "../Games/conecta4/pages/mainMenu/mainMenu";
 import Footer from "../Components/Footer";
-import { Container, Row } from "react-bootstrap";
 
 function GameScreen() {
   const { game } = useParams();
@@ -69,6 +69,23 @@ function GameScreen() {
   const title = titleGame[game];
   const body = bodyGame[game];
   const img = imgGame[game];
+  const [showModal, setShowModal] = useState(false);
+  const [invitedFriend, setInvitedFriend] = useState('');
+
+  const handleClose = () => {
+    setShowModal(false);
+  };
+
+  const handleShow = () => {
+    setShowModal(true);
+  };
+
+  const handleInvite = (friend) => {
+    setInvitedFriend(friend);
+    setShowModal(false);
+    alert(`Amigo invitado: ${friend}`);
+  };
+
 
   let componente = gameComponent[game];
   return (
@@ -93,6 +110,25 @@ function GameScreen() {
             <p className="description text-fit">{body}</p>
           </div>
           {/* Aqui añade un btn-success Invitar a un Amigo */}
+          <Button variant="success" className="mr-2" onClick={handleShow}>
+            Invitar a un Amigo
+          </Button>
+
+          <Modal show={showModal} onHide={handleClose}>
+            <Modal.Header closeButton>
+              <Modal.Title>Invitar a un Amigo</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <ul>
+                {["AriaHG", "ManuTNT", "JoakiGPI"].map((friend) => (
+                  <li key={friend} style={{ cursor: "pointer" }} onClick={() => handleInvite(friend)}>
+                    {friend}
+                  </li>
+                ))}
+              </ul>
+            </Modal.Body>
+          </Modal>
+
         </div>
         <div
           className=""

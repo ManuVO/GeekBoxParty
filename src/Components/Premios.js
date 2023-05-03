@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import React, { useState } from "react";
 import guiño from '../Assets/img/premios/guiño1.png'
+import cohete from '../Assets/img/premios/cartoon-rocket-launch-png.webp'
 import sushi from '../Assets/img/premios/sushigo.png'
 import moneda from '../Assets/img/premios/moneda mario.png'
 
@@ -55,8 +56,8 @@ const logrosEjemplo = [
     moneda: moneda,
     rango: "MAESTRO  DE PRESTIGIO",
     avance: 3,
-    desbloqueado: true,
-    porcentaje:"250.000"
+    desbloqueado: false,
+    porcentaje:"500.000"
   },
   {
     id: 2,
@@ -65,8 +66,18 @@ const logrosEjemplo = [
     moneda:moneda,
     
     desbloqueado: true,
+    porcentaje:"20.000"
+  },
+  {
+    id: 3,
+    imagen: cohete,
+    descripcion: "-Skin Marcador Galactico-",
+    moneda:moneda,
+    
+    desbloqueado: false,
     porcentaje:"50.000"
   },
+  
   
 ];
 

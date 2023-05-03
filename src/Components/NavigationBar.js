@@ -4,8 +4,12 @@ import imagen2 from "../Assets/img/Perfil.png";
 import "./NavigationBar.css";
 import { Link as RouterLink } from "react-router-dom";
 import { Link } from "@mui/material";
-import { Dropdown, InputGroup, Nav} from "react-bootstrap";
+import { Dropdown, InputGroup, Nav } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
 
 function NavigationBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -67,31 +71,31 @@ function NavigationBar() {
       title: "Exploding Kittens",
       description:
         "Es un juego de cartas de estrategia y suerte en el que los jugadores intentan evitar a toda costa ser eliminados por cartas de Gatitos Explosivos.",
-        clickEvent: () => searchGameClick("explodingKittens"),
-      },
+      clickEvent: () => searchGameClick("explodingKittens"),
+    },
     {
       image:
         "https://juegosdemesayrol.com/wp-content/uploads/Catan-El-juego-10.jpg",
       title: "Catán",
       description:
         "Los jugadores compiten por construir y desarrollar colonias en una isla ficticia a través de la gestión de recursos y el intercambio comercial.",
-        clickEvent: () => searchGameClick("catan"),
-      },
+      clickEvent: () => searchGameClick("catan"),
+    },
     {
       image:
         "https://www.ludonauta.es/files/ludico/juegos-mesas/juego-mesa-virus-2015-1544494627.jpg",
       title: "Virus!",
       description:
         "Juego de cartas donde los jugadores compiten por ser el primero en curar todas sus enfermedades y ganar el juego, pero también pueden sabotear a los demás con virus y medicinas defectuosas.",
-        clickEvent: () => searchGameClick("virus"),
-      },
+      clickEvent: () => searchGameClick("virus"),
+    },
     {
       image: "https://cdn.beahero.gg/2021/01/risk-portada.jpg",
       title: "Risk",
       description:
         "Es un juego de estrategia en el que los jugadores deben conquistar territorios y eliminar a sus oponentes mediante el uso de tropas y tácticas militares, con el objetivo de controlar el mundo.",
-        clickEvent: () => searchGameClick("risk"),
-      },
+      clickEvent: () => searchGameClick("risk"),
+    },
   ];
 
   function toggleMenu() {
@@ -116,64 +120,73 @@ function NavigationBar() {
   }
 
   return (
-    <nav className="nav-navBarGeneral">
-      <div className="nav-left-section">
-        <a href="/" className="nav-logo">
-          <img src={imagen} alt="Logo GeekBoxParty" />
-        </a>
-        <div className="nav-search-bar">
-          <InputGroup>
-            <Dropdown>
-              <Dropdown.Toggle
-                as="input"
-                type="text"
-                placeholder="Buscar juegos"
-                value={search}
-                onChange={handleSearch}
-              />
-              {filteredJuegos.length > 0 && (
-                <Dropdown.Menu className="search-results-list">
-                  {filteredJuegos.map((juego, index) => (
-                    <Dropdown.Item key={index} onClick={juego.clickEvent}>
-                      {juego.title}
-                    </Dropdown.Item>
-                  ))}
-                </Dropdown.Menu>
-              )}
-            </Dropdown>
-          </InputGroup>
-        </div>
-      </div>
-
-      <div className="nav-center-section">
-        <ul className="nav-menu">
-          <li>
-            <a href="/ranking">Ranking</a>
-          </li>
-          <li>
-            <a href="/torneos">Torneos</a>
-          </li>
-          <li>
-            <a href="/games">Juegos</a>
-          </li>
-          <li>
-            <a href="/comunidad">Comunidad</a>
-          </li>
-        </ul>
-      </div>
-      <div className="nav-right-section">
-        <div className="nav-profile">
-          <img src={imagen2} alt="Avatar" onClick={toggleProfileMenu} />
-          <div className={profileMenuOpen ? "dropdown active" : "dropdown"}>
-            <a href="/perfil">Perfil</a>
-            <a href="/login">Cerrar sesión</a>
+    <>
+      <nav className="nav-navBarGeneral">
+        <div className="nav-left-section">
+          <a href="/" className="nav-logo">
+            <img src={imagen} alt="Logo GeekBoxParty" />
+          </a>
+          <div className="nav-search-bar">
+            <InputGroup>
+              <Dropdown>
+                <Dropdown.Toggle
+                  as="input"
+                  type="text"
+                  placeholder="Buscar juegos"
+                  value={search}
+                  onChange={handleSearch}
+                />
+                {filteredJuegos.length > 0 && (
+                  <Dropdown.Menu className="search-results-list">
+                    {filteredJuegos.map((juego, index) => (
+                      <Dropdown.Item key={index} onClick={juego.clickEvent}>
+                        {juego.title}
+                      </Dropdown.Item>
+                    ))}
+                  </Dropdown.Menu>
+                )}
+              </Dropdown>
+            </InputGroup>
           </div>
         </div>
-        <div className="nav-menu-toggle" onClick={toggleMenu}>
-          <i className="fas fa-bars"></i>
+
+        <div className="nav-center-section">
+          <ul className="nav-menu">
+            <li>
+              <a href="/games">Juegos</a>
+            </li>
+            <li>
+              <a href="/torneos">Torneos</a>
+            </li>
+            <li>
+              <a href="/ranking">Ranking</a>
+            </li>
+            <li>
+              <a href="/comunidad">Comunidad</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </nav>
+        <div className="nav-right-section">
+          <div className="nav-profile">
+            <img src={imagen2} alt="Avatar" onClick={toggleProfileMenu} />
+            <div className={profileMenuOpen ? "dropdown active" : "dropdown"}>
+              <a href="/perfil">Perfil</a>
+              <a href="/login">Cerrar sesión</a>
+            </div>
+          </div>
+          <div className="nav-menu-toggle" onClick={toggleMenu}>
+            <i className="fas fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <Container fluid className="bg-warning py-2">
+        <Row>
+          <Col className="d-flex justify-content-center">
+            <strong>¡Hazte Premium y juega a todos los juegos y disfruta de los torneos por solo 9.99€ al mes!</strong>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
 

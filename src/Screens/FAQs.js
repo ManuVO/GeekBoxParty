@@ -158,52 +158,110 @@ function faqs() {
                             <Accordion.Item eventKey="0">
                                 <Accordion.Header>Cómo hacemos cumplir nuestras reglas</Accordion.Header>
                                 <Accordion.Body>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum.
+
+                                    <p>
+                                        <b>1.</b> Definir las reglas de la página web: Antes de buscar hacer cumplir 
+                                        las reglas de la página web, es importante definirlas claramente. Por ejemplo, 
+                                        se pueden establecer reglas sobre el contenido que se permite publicar, el 
+                                        comportamiento de los usuarios, la seguridad de la página, entre otros aspectos.
+                                    </p>
+                                    <p>
+                                        <b>2.</b> Conocer al público objetivo: Es importante conocer al público objetivo 
+                                        de la página web para poder adaptar las reglas y el contenido de acuerdo a sus 
+                                        necesidades y preferencias. De esta manera, se puede fomentar la interacción y 
+                                        la participación de los usuarios.
+                                    </p>
+                                    <p>
+                                        <b>3.</b> Garantizar la seguridad de la página web: La seguridad es un aspecto 
+                                        fundamental en cualquier página web. Para ello, se pueden utilizar herramientas 
+                                        y servicios que permitan detectar y prevenir posibles amenazas y vulnerabilidades. 
+                                        Por ejemplo, se puede utilizar una herramienta como "Seguridad del sitio web 
+                                        impulsada con tecnología Sucuri" para analizar y monitorear el estado de los 
+                                        archivos y documentos que se suben a la página.
+                                    </p>
+                                    <p>
+                                        <b>4.</b> Cumplir con las leyes y regulaciones: Es importante cumplir con las leyes 
+                                        y regulaciones que se aplican a la actividad en la red y al comercio electrónico. 
+                                        Por ejemplo, en España, la Ley de Servicios de la Sociedad de la Información y 
+                                        Comercio Electrónico (Ley 34/2002) establece algunas obligaciones y requisitos que 
+                                        deben cumplir las páginas web que prestan algún servicio.
+                                    </p>
+                                    <p>
+                                        <b>5.</b> Aplicar los principios del diseño: Los principios del diseño pueden ser muy 
+                                        útiles para mejorar la apariencia y la funcionalidad de una página web. Por ejemplo, 
+                                        se pueden utilizar principios como la jerarquía visual, la simplicidad, el equilibrio 
+                                        y la armonía para crear una página web fácil de usar y atractiva para los usuarios.
+                                    </p>
                                 </Accordion.Body>
                             </Accordion.Item>
 
                             <Accordion.Item eventKey="1">
                                 <Accordion.Header>Avisos en GeekBoxParty y su significado</Accordion.Header>
                                 <Accordion.Body>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum.
+                                <p>
+                                    A veces incluimos un aviso en una cuenta para brindarte más contexto sobre las 
+                                    medidas que pueden tomar nuestros sistemas o equipos. En algunos casos, estas medidas responden 
+                                    a comportamientos que incumplen las Reglas de GeekBoxParty. En otros, pueden responder a un 
+                                    requerimiento válido y correctamente definido proveniente de una entidad autorizada en un país 
+                                    determinado. 
+                                </p>
                                 </Accordion.Body>
                             </Accordion.Item>
 
                             <Accordion.Item eventKey="2">
                                 <Accordion.Header>Cómo se utilizan las cookies en GeekBoxParty</Accordion.Header>
                                 <Accordion.Body>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum.
+                                    <p>
+                                    Las cookies y otras tecnologías similares, como píxeles o almacenamiento local, te brindan una 
+                                    experiencia mejor, más rápida y más segura en GeekBoxParty. Las cookies también se utilizan para 
+                                    operar nuestros servicios, que incluyen nuestros sitios web, aplicaciones, APIs, píxeles, 
+                                    integradores de contenido y notificaciones de correo electrónico. Concretamente, GeekBoxParty 
+                                    utiliza estas tecnologías para:
+                                    </p>
+
+                                    <ul>
+
+                                        <li>Ofrecer las características y funcionalidades de los servicios de GeekBoxParty.</li>
+                                        <li>Guardar y respetar tus preferencias.</li>
+                                        <li>Protegerte contra el spam y abusos.</li>
+                                        <li>Proporcionar funciones de suscripción</li>
+                                        <li>Comprender cómo interactúas con nuestros servicios y dónde podemos mejorar.</li>
+                                        <li>Valorar el rendimiento de nuestros servicios e identificar errores y otros problemas de calidad.</li>
+                                        <li>Recopilar los datos que se utilizan para el funcionamiento de nuestra actividad —desde la medición del tamaño de nuestra audiencia hasta la aplicación de las Reglas de GeekBoxParty.</li>
+
+
+                                    </ul>
                                 </Accordion.Body>
                             </Accordion.Item>
 
                             <Accordion.Item eventKey="3">
                                 <Accordion.Header>Política relativa a las colaboraciones de pago</Accordion.Header>
                                 <Accordion.Body>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                    culpa qui officia deserunt mollit anim id est laborum.
+                                    <p>
+                                        La plataforma de juegos GeekBoxParty tiene una política de pagos y cobros que se describe en 
+                                        detalle en el sitio web . En esta política se especifica que los bonos son fondos 
+                                        acreditados por la plataforma a la cuenta del usuario y que pueden usarse para pagar 
+                                        la recompensa por los derechos de usar el juego. Los bonos se concederán a discreción
+                                        de GeekBoxParty, por ejemplo, al aportar los fondos a una cuenta dentro del servicio de GeekBoxParty 
+                                        utilizando un método de pago específico y/o en el momento del debitar una cuenta de GeekBoxParty, 
+                                        así como de otras formas previstas en el marco de las actividades de marketing promocionales 
+                                        (incentivos).
+                                    </p>
+                                    <p>
+                                        La Cuenta Premium es el derecho a usar el juego que le brinda capacidades adicionales dentro 
+                                        del juego (por ejemplo, un nivel más alto). La Cuenta Premium se activará automáticamente cuando 
+                                        el Usuario hace clic en el botón “Comprar” o en otro botón similar, cuando el Usuario ha hecho 
+                                        el login en la Plataforma de GeekBoxParty.
+                                    </p>
+                                    <p>
+                                        Es importante destacar que el Editor o GeekBoxParty son aceptadores de fondos y no proporcionan servicios 
+                                        de pago: los pagos se realizan utilizando los métodos de pago especificados en el sitio web 
+                                        GeekBoxParty.es. Todos los métodos de pago disponibles y la descripción de los métodos de transferir 
+                                        los fondos se especifican en la plataforma de GeekBoxParty . Después de que el usuario ha realizado el 
+                                        pago mediante cualquier método de pago dentro de los marcos de su cuenta de GeekBoxParty, podrá recibir 
+                                        y usar las capacidades adicionales, la suscripción, la cuenta premium y otros derechos pagados 
+                                        (si los hubiera) en el juego, disponibles a través de la plataforma de GeekBoxParty
+                                    </p>
                                 </Accordion.Body>
                             </Accordion.Item>
 
