@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { X } from 'react-bootstrap-icons';
 
 
 function NavigationBar() {
@@ -21,6 +22,11 @@ function NavigationBar() {
   function searchGameClick(juego) {
     navigate(`/game/${juego}`);
   }
+
+  const [hiddenClass, setHiddenClass] = useState('');
+  const handleHide = () => {
+    setHiddenClass('hidden');
+  };
 
   const juegos = [
     {
@@ -119,6 +125,8 @@ function NavigationBar() {
     }
   }
 
+
+
   return (
     <>
       <nav className="nav-navBarGeneral">
@@ -179,10 +187,15 @@ function NavigationBar() {
           </div>
         </div>
       </nav>
-      <Container fluid className="bg-warning py-2">
+      <Container fluid className={`bg-warning py-2 ${hiddenClass}`}>
         <Row>
           <Col className="d-flex justify-content-center">
-            <strong>¡Hazte Premium y juega a todos los juegos y disfruta de los torneos por solo 9.99€ al mes!</strong>
+            <strong>
+              ¡Hazte Premium y juega a todos los juegos y disfruta de los torneos por solo 9.99€ al mes!
+            </strong>
+          </Col>
+          <Col xs="auto" className="d-flex align-items-center">
+            <X onClick={handleHide} />
           </Col>
         </Row>
       </Container>

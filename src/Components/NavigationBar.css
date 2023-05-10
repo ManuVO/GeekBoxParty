@@ -1,4 +1,4 @@
-.nav-navBarGeneral{
+.nav-navBarGeneral {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -11,6 +11,12 @@
   position: relative;
   overflow: visible;
 }
+
+
+.hidden {
+  display: none;
+}
+
 .nav-left-section {
   display: flex;
   align-items: center;
@@ -32,7 +38,7 @@
   position: relative;
   flex-grow: 1;
   margin: 0 60px;
-  
+
 }
 
 .nav-search-bar input[type="text"] {
@@ -63,7 +69,7 @@
 }
 
 .nav-center-section {
-  color: black; 
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,7 +86,7 @@
   margin: 0;
   padding: 0;
   height: 100%;
-  color:#000;
+  color: #000;
 }
 
 .nav-menu li {
@@ -142,7 +148,8 @@ a:-webkit-any-link {
   color: #23262b;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  border-radius: 3px;;
+  border-radius: 3px;
+  ;
 }
 
 .dropdown a {
@@ -199,19 +206,24 @@ a:-webkit-any-link {
   .nav-navBarGeneral {
     padding: 10px;
   }
+
   .nav-left-section {
     margin-right: 10px;
   }
+
   .nav-logo {
     margin: 0;
   }
+
   .nav-search-bar {
     margin: 0 10px;
   }
+
   .nav-search-bar input[type="text"] {
     width: 150px;
     font-size: 14px;
   }
+
   .nav-menu {
     display: none;
     position: absolute;
@@ -225,20 +237,23 @@ a:-webkit-any-link {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .nav-menu li {
     margin: 20px 0;
     font-size: 1.5em;
   }
+
   .nav-menu-toggle {
     display: block;
     margin-right: 10px;
     cursor: pointer;
   }
+
   .dropdown {
     top: 40px;
   }
+
   .nav-menu.active {
     display: flex;
   }
 }
-
