@@ -61,7 +61,7 @@ function GameScreen() {
     chess:
       "El ajedrez es un juego de mesa para dos jugadores que implica mover piezas estratégicamente para capturar al rey del oponente en un tablero de 64 casillas. Es un juego intelectual y desafiante que se ha jugado durante siglos.",
     sushigo:
-      "El ajedrez es un juego de mesa para dos jugadores que implica mover piezas estratégicamente para capturar al rey del oponente en un tablero de 64 casillas. Es un juego intelectual y desafiante que se ha jugado durante siglos.",
+      "Sushi Go! es un juego con una dinámica rotatoria que simula muy bien las mesas de un restaurante de Sushi en las que los jugadores van jugando cartas y van pasándolas entre los jugadores en la que cada vez que te llegan cartas a tus manos tienes que decidir qué plato quieres comer, digo jugar.",
     explodingkittens:
       "Gatos que Explotan, concha de su madre, sun gatinhos explusivos",
   };

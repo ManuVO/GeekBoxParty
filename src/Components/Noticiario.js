@@ -51,7 +51,7 @@ const Noticiario = () => {
                             alt="Imagen principal"
                         />
                         <CardBody>
-                            <CardTitle tag="h4" className="font-weight-bold">Coins dobles en todos los modos de Sushi Go! </CardTitle>
+                            <CardTitle tag="h4" className="font-weight-bold">GeekCoins dobles en todos los modos de Sushi Go! </CardTitle>
                             <CardSubtitle tag="h6" className="text-muted">Consigue 5000 puntos en la Temporada y consigue un marcador especial Sushi Go!</CardSubtitle>
                         </CardBody>
                     </Card>
